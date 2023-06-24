@@ -6,10 +6,11 @@
 
 body {
     background: var(--black, #000);
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 .Home{
     display: flex;
+    justify-content: center;
 }
 #leftSide {
     width: 351px;
@@ -90,7 +91,7 @@ body {
             margin-left: 88px;
             margin-top: 48px;
             margin-right: 90px;
-            width: 966px;
+            width: 935px;
             height: 403px;
             flex-shrink: 0;
             background: url("assets/image/Noise & Texture.jpg") lightgray 0% 0% / 100px 100px repeat;
@@ -259,7 +260,6 @@ body {
             border-top: 1px solid #232323;
             background: linear-gradient(90deg, rgba(35, 30, 40, 0.30) 0%, rgba(34, 29, 39, 0.30) 100%);
             backdrop-filter: blur(15px);
-            width: 1251px;
             padding: 40px 30px;
             gap: 70px;
             flex-shrink: 0;
@@ -358,3 +358,11 @@ body {
         }
     }
 }
+// @media (max-width: 1920px) {
+//     .col-lg-10 {
+//       display: block;
+//     }
+//     .col-lg-9 {
+//       display: none;
+//     }
+//   }
