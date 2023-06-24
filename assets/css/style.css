@@ -9,8 +9,8 @@ body {
 }
 
 .Home {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
 }
 
 #leftSide {
@@ -85,7 +85,7 @@ body {
   margin-left: 88px;
   margin-top: 48px;
   margin-right: 90px;
-  width: 935px;
+  width: 84%;
   height: 403px;
   flex-shrink: 0;
   background: url("assets/image/Noise & Texture.jpg") lightgray 0% 0%/100px 100px repeat;
@@ -227,6 +227,7 @@ body {
   position: relative;
 }
 .rightSide #getStarted .cardContent {
+  width: 100%;
   border-top: 1px solid #232323;
   background: linear-gradient(90deg, rgba(35, 30, 40, 0.3) 0%, rgba(34, 29, 39, 0.3) 100%);
   backdrop-filter: blur(15px);
@@ -321,4 +322,10 @@ body {
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
+}
+
+@media (max-width: 1920px) {
+  .cardContent {
+    width: 88px;
+  }
 }/*# sourceMappingURL=style.css.map */
