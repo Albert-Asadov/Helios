@@ -85,7 +85,7 @@ body {
   margin-left: 88px;
   margin-top: 48px;
   margin-right: 90px;
-  width: 84%;
+  width: auto;
   height: 403px;
   flex-shrink: 0;
   background: url("assets/image/Noise & Texture.jpg") lightgray 0% 0%/100px 100px repeat;
