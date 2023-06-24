@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--black, #000);
+  overflow-x: hidden;
+}
+
+#leftSide {
+  width: 351px;
+  padding-top: 53px;
+  padding-right: 40px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: center;
+}
+#leftSide .content {
+  width: 270px;
+  height: 398px;
+}
+#leftSide .content .logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#leftSide .content .logo .mainLogo img {
+  width: 147.27px;
+  height: 14.114px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+#leftSide .content .logo .secondaryLogo img {
+  width: 39.806px;
+  height: 40.225px;
+  flex-shrink: 0;
+  border-radius: 8.171px;
+  background: #1E1E1E;
+}
+#leftSide .content nav {
+  margin-top: 37.78px;
+}
+#leftSide .content nav ul {
+  padding: 0;
+  margin: 0;
+}
+#leftSide .content nav ul li {
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 14px 15px;
+  list-style: none;
+  display: flex;
+  width: 270px;
+  height: 48px;
+  align-items: center;
+  gap: 5px;
+}
+#leftSide .content nav ul li a {
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+#leftSide .content nav ul li a img {
+  margin-left: 70px;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+#leftSide .content nav ul li:hover {
+  background-color: #1E1E1E;
+}
+
+#rightSide .blogCard {
+  margin-right: 89px;
+  margin-top: 48px;
+  margin-left: 88px;
+  width: 1073px;
+  height: 403px;
+  flex-shrink: 0;
+  background: url("assets/image/Noise & Texture.png"), lightgray 0% 0%/100px 100px repeat;
+}/*# sourceMappingURL=Blog.css.map */

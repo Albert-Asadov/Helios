@@ -175,7 +175,6 @@ body {
 .rightSide #cards .cards-content .card, .rightSide #desighn .cards-content .card {
   width: 100%;
   display: flex;
-  height: 300px;
   padding: 10px 10px 20px 10px;
   flex-direction: column;
   align-items: flex-start;
@@ -184,6 +183,9 @@ body {
   border: 1px solid #232323;
   background: linear-gradient(90deg, rgba(35, 30, 40, 0.3) 0%, rgba(34, 29, 39, 0.3) 100%);
   backdrop-filter: blur(15px);
+}
+.rightSide #cards .cards-content .card .image, .rightSide #desighn .cards-content .card .image {
+  width: 100%;
 }
 .rightSide #cards .cards-content .card .image img, .rightSide #desighn .cards-content .card .image img {
   width: 100%;
@@ -197,7 +199,7 @@ body {
 }
 .rightSide #cards .cards-content .card .typography-content .titleContent, .rightSide #desighn .cards-content .card .typography-content .titleContent {
   color: #FFF;
-  text-align: center;
+  text-align: start;
   font-size: 21px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -206,6 +208,7 @@ body {
   margin: 0;
 }
 .rightSide #cards .cards-content .card .typography-content .textContent, .rightSide #desighn .cards-content .card .typography-content .textContent {
+  width: 310px;
   margin-top: 10px;
   color: var(--text-text-disabled, #B2B7C2);
   font-size: 20px;
