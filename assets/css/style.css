@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+.Home {
+  display: flex;
+}
+
 #leftSide {
   width: 351px;
   padding-top: 53px;
