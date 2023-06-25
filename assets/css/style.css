@@ -321,10 +321,4 @@ body {
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
-}
-
-@media (max-width: 1920px) {
-  .cardContent {
-    width: 88px;
-  }
 }/*# sourceMappingURL=style.css.map */

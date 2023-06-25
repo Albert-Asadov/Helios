@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--black, #000);
+    // overflow-x: hidden;
+}
+.Home{
+   display: grid;
+   grid-template-columns: 1fr 5fr;
+}
+#leftSide {
+    width: 351px;
+    padding-top: 53px;
+    padding-right: 40px;
+    padding-left: 40px;
+    display: flex;
+    justify-content: center;
+    .content {
+        width: 270px;
+        height: 398px;
+        .logo {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            .mainLogo {
+                img {
+                    width: 147.27px;
+                    height: 14.114px;
+                    flex-shrink: 0;
+                    object-fit: contain;
+                }
+            }
+            .secondaryLogo {
+                img {
+                    width: 39.806px;
+                    height: 40.225px;
+                    flex-shrink: 0;
+                    border-radius: 8.171px;
+                    background: #1E1E1E;
+                }
+            }
+        }
+        nav {
+            margin-top: 37.78px;
+            ul {
+                padding: 0;
+                margin: 0;
+                a {
+                    &:hover {
+                        background-color: #1E1E1E;
+                    }
+                    margin-bottom: 20px;
+                    border-radius: 10px;
+                    padding: 14px 15px;
+                    display: flex;
+                    width: 270px;
+                    height: 48px;
+                    align-items: center;
+                    gap: 5px;
+                    color: var(--white, #FFF);
+                    font-size: 20px;
+                    font-family: 'Inter',
+                    sans-serif;
+                    font-weight: 500;
+                    text-decoration: none;
+                    li {
+                        list-style: none;
+                        img {
+                            margin-left: 70px;
+                            width: 20px;
+                            height: 20px;
+                            flex-shrink: 0;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
