@@ -103,8 +103,10 @@ body {
             width: auto;
             height: 403px;
             flex-shrink: 0;
-            background: url("assets/image/imgs.png"), lightgray 0% 0% / 100px 100px repeat;
-            //problem var
+            background: url("../image/imgs.png"), rgb(99, 99, 99) 0% 0% / 100px 100px repeat;
+            background-size: cover;
+            border-radius: 18px;
+            border: 1px solid #232323;
         }
     }
     #cards{
