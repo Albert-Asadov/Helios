@@ -6,7 +6,11 @@
 
 body {
     background: var(--black, #000);
-    overflow-x: hidden;
+}
+
+.Home {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
 }
 
 #leftSide {
@@ -16,9 +20,11 @@ body {
     padding-left: 40px;
     display: flex;
     justify-content: center;
+
     .content {
         width: 270px;
         height: 398px;
+
         .logo {
             display: flex;
             justify-content: start;
@@ -32,6 +38,7 @@ body {
                     object-fit: contain;
                 }
             }
+
             .secondaryLogo {
                 img {
                     width: 39.806px;
@@ -42,30 +49,38 @@ body {
                 }
             }
         }
+
         nav {
             margin-top: 37.78px;
+
             ul {
                 padding: 0;
                 margin: 0;
-                li {
-                    cursor: pointer;
+
+                a {
+                    &:hover {
+                        background-color: #1E1E1E;
+                    }
+
                     margin-bottom: 20px;
                     border-radius: 10px;
                     padding: 14px 15px;
-                    list-style: none;
                     display: flex;
                     width: 270px;
                     height: 48px;
                     align-items: center;
                     gap: 5px;
+                    color: var(--white, #FFF);
+                    font-size: 20px;
+                    font-family: 'Inter',
+                    sans-serif;
+                    font-weight: 500;
+                    text-decoration: none;
 
-                    a {
-                        color: var(--white, #FFF);
-                        font-size: 20px;
-                        font-family: 'Inter', sans-serif;
-                        font-weight: 500;
-                        text-decoration: none;
-                        img{
+                    li {
+                        list-style: none;
+
+                        img {
                             margin-left: 70px;
                             width: 20px;
                             height: 20px;
@@ -73,16 +88,14 @@ body {
                             object-fit: contain;
                         }
                     }
-                    &:hover{
-                        background-color: #1E1E1E;
-                    }
                 }
             }
         }
     }
 }
-#rightSide{
-    .blogCard{
+
+#rightSide {
+    .blogCard {
         margin-right: 89px;
         margin-top: 48px;
         margin-left: 88px;

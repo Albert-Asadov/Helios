@@ -6,7 +6,11 @@
 
 body {
   background: var(--black, #000);
-  overflow-x: hidden;
+}
+
+.Home {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
 }
 
 #leftSide {
@@ -46,34 +50,33 @@ body {
   padding: 0;
   margin: 0;
 }
-#leftSide .content nav ul li {
-  cursor: pointer;
+#leftSide .content nav ul a {
   margin-bottom: 20px;
   border-radius: 10px;
   padding: 14px 15px;
-  list-style: none;
   display: flex;
   width: 270px;
   height: 48px;
   align-items: center;
   gap: 5px;
-}
-#leftSide .content nav ul li a {
   color: var(--white, #FFF);
   font-size: 20px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   text-decoration: none;
 }
-#leftSide .content nav ul li a img {
+#leftSide .content nav ul a:hover {
+  background-color: #1E1E1E;
+}
+#leftSide .content nav ul a li {
+  list-style: none;
+}
+#leftSide .content nav ul a li img {
   margin-left: 70px;
   width: 20px;
   height: 20px;
   flex-shrink: 0;
   object-fit: contain;
-}
-#leftSide .content nav ul li:hover {
-  background-color: #1E1E1E;
 }
 
 #rightSide .blogCard {
