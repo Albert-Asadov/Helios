@@ -179,6 +179,37 @@ body {
 #rightSide #cards .cards-content .card .typography-content .textContent P {
   margin: 0;
 }
+#rightSide #cards .pagination {
+  margin-top: 40px;
+}
+#rightSide #cards .pagination ul {
+  padding: 0;
+}
+#rightSide #cards .pagination ul a {
+  text-align: center;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #0C0A0D;
+  color: #525C76;
+  padding: 14px 16px 0px 16px;
+  border: 1px solid #232323;
+  margin-left: 5px;
+}
+#rightSide #cards .pagination ul a:hover {
+  background-color: #2E6DF3;
+  color: white;
+}
+#rightSide #cards .pagination ul a li {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  font-family: "Inter", sans-serif;
+  list-style: none;
+}
 #rightSide #getStarted {
   margin-top: 50px;
   position: relative;
@@ -301,4 +332,9 @@ body {
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
+}
+
+.active {
+  background-color: #2E6DF3 !important;
+  color: white !important;
 }/*# sourceMappingURL=Blog.css.map */

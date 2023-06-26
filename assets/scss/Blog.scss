@@ -199,6 +199,38 @@ body {
                 }
             }
         }
+        .pagination{
+            margin-top: 40px;
+            ul{
+                padding: 0;
+
+               a{  
+                    text-align: center;
+                    display: inline-block;
+                    width: 48px;
+                    height: 48px;
+                    text-decoration: none;
+                    border-radius: 50%;
+                    background-color: #0C0A0D;
+                    color: #525C76;
+                    padding:14px 16px 0px 16px;
+                    border: 1px solid #232323;
+                    margin-left: 5px;
+                    &:hover{
+                        background-color: #2E6DF3;
+                        color: white;
+                    }
+                li{
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    font-family: 'Inter', sans-serif;
+                    list-style: none;
+                }
+               }
+            }
+        }
     }
     #getStarted{
         margin-top: 50px;
@@ -327,4 +359,8 @@ body {
             }
         }
     }
+}
+.active{
+    background-color: #2E6DF3 !important;
+    color: white !important;
 }
