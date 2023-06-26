@@ -91,11 +91,36 @@ body {
   border-radius: 18px;
   border: 1px solid #232323;
 }
+#rightSide #blogMainCard .blogCard .title {
+  margin: 0 auto;
+  padding-top: 124px;
+  text-align: center;
+}
+#rightSide #blogMainCard .blogCard .title p {
+  padding: 0;
+  margin: 0;
+  height: 116px;
+  color: #FFF;
+  font-size: 90px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
 #rightSide #cards {
   position: relative;
   margin-top: 50px;
   margin-left: 88px;
   margin-right: 90px;
+}
+#rightSide #cards .imageBg {
+  top: 205px;
+  right: -93px;
+  position: absolute;
+  background-image: url("../image/bg-imgbg-rose.png");
+  width: 690px;
+  height: 750px;
+  transform: rotate(0deg);
+  background-repeat: no-repeat;
+  opacity: 0.9;
 }
 #rightSide #cards .title {
   width: 304px;
@@ -157,6 +182,28 @@ body {
 #rightSide #getStarted {
   margin-top: 50px;
   position: relative;
+}
+#rightSide #getStarted .bg-image {
+  left: 75px;
+  bottom: 30px;
+  position: absolute;
+  width: 942.861px;
+  background-repeat: no-repeat;
+  height: 393.816px;
+  background-size: cover;
+  transform: rotate(0deg);
+  opacity: 0.9;
+  background-image: url("../image/bg-img_blue.png");
+}
+@media screen and (min-width: 1920px) {
+  #rightSide #getStarted .bg-image {
+    left: 75px;
+    bottom: 90px;
+    position: absolute;
+    width: 1264.861px;
+    background-repeat: no-repeat;
+    height: 393.816px;
+  }
 }
 #rightSide #getStarted .cardContent {
   width: 100%;
