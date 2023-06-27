@@ -1,6 +1,4 @@
 
-
-
 const accordionItems = document.querySelectorAll('.accordion-item');
 var activeHover = document.querySelectorAll(".hoverActive");
 var SubMenu = document.getElementById("subMenu");
