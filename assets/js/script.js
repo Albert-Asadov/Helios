@@ -1,4 +1,6 @@
 
+
+
 const accordionItems = document.querySelectorAll('.accordion-item');
 var activeHover = document.querySelectorAll(".hoverActive");
 var SubMenu = document.getElementById("subMenu");
@@ -20,7 +22,7 @@ function toggleAccordion() {
   } else {
     content.style.maxHeight = '212px';
     content.style.padding = '14px 15px';
-    image.style.transform = 'rotate(90deg)'
+    image.style.transform = 'rotate(90deg)';
     activeHover.forEach(function(item) {
       if (item !== this.parentElement) {
         item.classList.remove("activeNavbar");
@@ -51,9 +53,16 @@ activeHover.forEach(function(element) {
   });
 });
 
+activeHover.forEach(e => {
+  e.addEventListener("click", function(e) {
+    e.stopPropagation();
+    SubMenu.style.display = "block";
+  });
+});
 
-activeHover.forEach(e=>{
-  e.addEventListener("click",function(){
-    SubMenu.style.display = "block"
-  })
-})
+window.addEventListener("click", function() {
+  SubMenu.style.display = "none";
+  activeHover.forEach(function(element) {
+    element.classList.remove("activeNavbar");
+  });
+});
