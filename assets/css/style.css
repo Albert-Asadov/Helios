@@ -50,7 +50,7 @@ body {
   padding: 0;
   margin: 0;
 }
-#leftSide .content nav ul a {
+#leftSide .content nav ul .hoverGray {
   margin-bottom: 20px;
   border-radius: 10px;
   padding: 14px 15px;
@@ -58,25 +58,87 @@ body {
   width: 270px;
   height: 48px;
   align-items: center;
-  gap: 5px;
   color: var(--white, #FFF);
   font-size: 20px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   text-decoration: none;
 }
-#leftSide .content nav ul a:hover {
+#leftSide .content nav ul .hoverGray:hover {
   background-color: #1E1E1E;
 }
-#leftSide .content nav ul a li {
+#leftSide .content nav ul .hoverGray li {
   list-style: none;
 }
-#leftSide .content nav ul a li img {
-  margin-left: 70px;
+#leftSide .content nav ul .component {
+  list-style: none;
+}
+#leftSide .content nav ul .component .accordion .accordion-item {
+  border-color: #000;
+  background-color: #000;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-header {
+  border-radius: 12px;
+  padding-bottom: 0px;
+  background-color: #000;
+  border-color: #000;
+  width: 268px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  padding: 14px 15px 14px 15px;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-header:hover {
+  background-color: #1E1E1E !important;
+  border-color: #1E1E1E !important;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-header img {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
   object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-header.active {
+  background-color: #232323;
+  border-color: #232323;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-content {
+  padding: 14px 15px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-color: #232323;
+  background-color: #232323;
+  transition: max-height 0.5s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-content ul a {
+  text-decoration: none;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-content ul li {
+  margin-top: 5px;
+  cursor: pointer;
+  padding: 14px 15px 14px 15px;
+  align-items: center;
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  list-style: none;
+  padding: 14px 15px 14px 15px;
+  border-radius: 10px;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-content ul li:hover {
+  background-color: #0C0A0D;
 }
 
 .rightSide #main-content .cardContent {
@@ -158,24 +220,28 @@ body {
   font-weight: 700;
   border-color: #2E6DF3;
 }
-.rightSide #cards, .rightSide #desighn {
+.rightSide #cards,
+.rightSide #desighn {
   position: relative;
   margin-top: 50px;
   margin-left: 88px;
   margin-right: 90px;
 }
-.rightSide #cards .title, .rightSide #desighn .title {
+.rightSide #cards .title,
+.rightSide #desighn .title {
   width: 304px;
   height: 35px;
   margin-bottom: 34px;
 }
-.rightSide #cards .title h2, .rightSide #desighn .title h2 {
+.rightSide #cards .title h2,
+.rightSide #desighn .title h2 {
   color: #FFF;
   font-size: 29px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
 }
-.rightSide #cards .cards-content .card, .rightSide #desighn .cards-content .card {
+.rightSide #cards .cards-content .card,
+.rightSide #desighn .cards-content .card {
   width: 100%;
   display: flex;
   padding: 10px 10px 20px 10px;
@@ -187,30 +253,40 @@ body {
   background: linear-gradient(90deg, rgba(35, 30, 40, 0.3) 0%, rgba(34, 29, 39, 0.3) 100%);
   backdrop-filter: blur(15px);
 }
-.rightSide #cards .cards-content .card .image, .rightSide #desighn .cards-content .card .image {
+.rightSide #cards .cards-content .card:hover,
+.rightSide #desighn .cards-content .card:hover {
+  transform: rotateX(360deg);
+}
+.rightSide #cards .cards-content .card .image,
+.rightSide #desighn .cards-content .card .image {
   width: 100%;
 }
-.rightSide #cards .cards-content .card .image img, .rightSide #desighn .cards-content .card .image img {
+.rightSide #cards .cards-content .card .image img,
+.rightSide #desighn .cards-content .card .image img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   border-radius: 8px;
 }
-.rightSide #cards .cards-content .card .typography-content, .rightSide #desighn .cards-content .card .typography-content {
+.rightSide #cards .cards-content .card .typography-content,
+.rightSide #desighn .cards-content .card .typography-content {
   width: 100%;
   padding: 0px 10px;
 }
-.rightSide #cards .cards-content .card .typography-content .titleContent, .rightSide #desighn .cards-content .card .typography-content .titleContent {
+.rightSide #cards .cards-content .card .typography-content .titleContent,
+.rightSide #desighn .cards-content .card .typography-content .titleContent {
   color: #FFF;
   text-align: start;
   font-size: 21px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
 }
-.rightSide #cards .cards-content .card .typography-content .titleContent p, .rightSide #desighn .cards-content .card .typography-content .titleContent p {
+.rightSide #cards .cards-content .card .typography-content .titleContent p,
+.rightSide #desighn .cards-content .card .typography-content .titleContent p {
   margin: 0;
 }
-.rightSide #cards .cards-content .card .typography-content .textContent, .rightSide #desighn .cards-content .card .typography-content .textContent {
+.rightSide #cards .cards-content .card .typography-content .textContent,
+.rightSide #desighn .cards-content .card .typography-content .textContent {
   width: 310px;
   margin-top: 10px;
   color: var(--text-text-disabled, #B2B7C2);
@@ -218,7 +294,8 @@ body {
   font-family: Inter;
   font-weight: 500;
 }
-.rightSide #cards .cards-content .card .typography-content .textContent P, .rightSide #desighn .cards-content .card .typography-content .textContent P {
+.rightSide #cards .cards-content .card .typography-content .textContent P,
+.rightSide #desighn .cards-content .card .typography-content .textContent P {
   margin: 0;
 }
 .rightSide #desighn {
@@ -357,4 +434,9 @@ body {
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
+}
+
+.activeNavbar {
+  background-color: #000 !important;
+  border-color: #000 !important;
 }/*# sourceMappingURL=style.css.map */
