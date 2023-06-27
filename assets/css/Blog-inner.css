@@ -50,7 +50,7 @@ body {
   padding: 0;
   margin: 0;
 }
-#leftSide .content nav ul a {
+#leftSide .content nav ul .hoverGray {
   margin-bottom: 20px;
   border-radius: 10px;
   padding: 14px 15px;
@@ -58,27 +58,146 @@ body {
   width: 270px;
   height: 48px;
   align-items: center;
-  gap: 5px;
   color: var(--white, #FFF);
   font-size: 20px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   text-decoration: none;
 }
-#leftSide .content nav ul a:hover {
+#leftSide .content nav ul .hoverGray:hover {
   background-color: #1E1E1E;
 }
-#leftSide .content nav ul a li {
+#leftSide .content nav ul .hoverGray li {
   list-style: none;
 }
-#leftSide .content nav ul a li img {
-  margin-left: 70px;
+#leftSide .content nav ul .component {
+  list-style: none;
+}
+#leftSide .content nav ul .component .accordion .accordion-item {
+  border-color: #000;
+  background-color: #000;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-header {
+  border-radius: 12px;
+  padding-bottom: 0px;
+  background-color: #000;
+  border-color: #000;
+  width: 268px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  padding: 14px 15px 14px 15px;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-header:hover {
+  background-color: #1E1E1E !important;
+  border-color: #1E1E1E !important;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-header img {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
   object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-header.active {
+  background-color: #232323;
+  border-color: #232323;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-content {
+  padding: 14px 15px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-color: #232323;
+  background-color: #232323;
+  transition: max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-content ul a {
+  text-decoration: none;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-content ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  cursor: pointer;
+  padding: 14px 15px 14px 15px;
+  align-items: center;
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  list-style: none;
+  padding: 14px 15px 14px 15px;
+  border-radius: 10px;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-content ul li .buttonNavPlanned a {
+  border-radius: 22px;
+  border: 1px solid #5286F5;
+  background-color: #EAF0FE;
+  padding: 7px 16px 0px 16px;
+  display: inline-block;
+  text-decoration: none;
+  width: 88px;
+  height: 32px;
+  line-height: 16.94px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-content ul li:hover {
+  background-color: #0C0A0D;
 }
 
+#subMenu {
+  display: none;
+  padding: 30px 10px 30px 10px;
+  z-index: 6;
+  background-color: #000;
+  height: 1782px;
+  position: absolute;
+  z-index: 9999;
+  left: 353px;
+  top: 0;
+  border-right: 1px solid #232323;
+  width: 243px;
+}
+#subMenu ul {
+  padding: 0;
+}
+#subMenu ul a {
+  font-family: "Inter", sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#subMenu ul a li {
+  font-family: "Inter", sans-serif;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 14px 15px 14px 15px;
+  Width: 223px;
+  Height: 48px;
+  list-style: none;
+}
+#subMenu ul a li:hover {
+  background-color: #232323;
+  border-color: #232323;
+}
+
+@media screen and (min-width: 1920px) {
+  #subMenu {
+    height: 1781px;
+  }
+}
 #rightSide #blogMainCard .blogCard {
   border-radius: 18px;
   border: 1px solid #232323;
@@ -264,4 +383,9 @@ body {
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
+}
+
+.activeNavbar {
+  background-color: #000 !important;
+  border-color: #000 !important;
 }/*# sourceMappingURL=Blog-inner.css.map */
