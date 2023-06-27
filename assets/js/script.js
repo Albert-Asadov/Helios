@@ -1,6 +1,7 @@
 
 const accordionItems = document.querySelectorAll('.accordion-item');
 var activeHover = document.querySelectorAll(".hoverActive");
+var SubMenu = document.getElementById("subMenu");
 
 function toggleAccordion() {
   const content = this.nextElementSibling;
@@ -12,12 +13,14 @@ function toggleAccordion() {
   if (content.style.maxHeight) {
     content.style.maxHeight = null;
     content.style.padding = '0';
+    image.style.transform = 'rotate(0deg)';
     activeHover.forEach(function(item) {
       item.classList.remove("activeNavbar");
     });
   } else {
     content.style.maxHeight = '212px';
     content.style.padding = '14px 15px';
+    image.style.transform = 'rotate(90deg)'
     activeHover.forEach(function(item) {
       if (item !== this.parentElement) {
         item.classList.remove("activeNavbar");
@@ -47,3 +50,10 @@ activeHover.forEach(function(element) {
     element.classList.add("activeNavbar");
   });
 });
+
+
+activeHover.forEach(e=>{
+  e.addEventListener("click",function(){
+    SubMenu.style.display = "block"
+  })
+})
