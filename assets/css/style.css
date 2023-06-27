@@ -117,7 +117,6 @@ body {
   border-bottom-right-radius: 12px;
   border-color: #232323;
   background-color: #232323;
-  transition: max-height 0.5s ease;
   max-height: 0;
   overflow: hidden;
 }
@@ -125,6 +124,9 @@ body {
   text-decoration: none;
 }
 #leftSide .content nav ul .component .accordion .accordion-item .accordion-content ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 5px;
   cursor: pointer;
   padding: 14px 15px 14px 15px;
@@ -136,6 +138,20 @@ body {
   list-style: none;
   padding: 14px 15px 14px 15px;
   border-radius: 10px;
+}
+#leftSide .content nav ul .component .accordion .accordion-item .accordion-content ul li .buttonNavPlanned a {
+  border-radius: 22px;
+  border: 1px solid #5286F5;
+  background-color: #EAF0FE;
+  padding: 7px 16px 0px 16px;
+  display: inline-block;
+  text-decoration: none;
+  width: 88px;
+  height: 32px;
+  line-height: 16.94px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
 }
 #leftSide .content nav ul .component .accordion .accordion-item .accordion-content ul li:hover {
   background-color: #0C0A0D;
