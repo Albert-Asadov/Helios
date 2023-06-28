@@ -203,10 +203,10 @@ body {
   margin-top: 48px;
   margin-left: 88px;
   width: auto;
-  height: 403px;
+  height: 385px;
+  background-size: cover;
   flex-shrink: 0;
   background: url("../image/imgs.png"), rgb(99, 99, 99) 0% 0%/100px 100px repeat;
-  background-size: cover;
   border-radius: 18px;
   border: 1px solid #232323;
 }

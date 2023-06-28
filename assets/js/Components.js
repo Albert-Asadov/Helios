@@ -66,3 +66,27 @@ window.addEventListener("click", function() {
 });
 
 
+const subMenu = document.getElementById('subMenu');
+const content = document.getElementById('content');
+
+// Функция для изменения стилей при изменении видимости subMenu
+function updateLayout() {
+  if (getComputedStyle(subMenu).display === 'none') {
+    content.style.gridColumn = '1 / span 5'; // Занимает 1fr
+  } else {
+    subMenu.style.gridColumn = '1 / span 1'; // Занимает 1fr
+    content.style.gridColumn = '2 / span 5'; // Занимает 5fr
+  }
+}
+
+// Вызываем функцию updateLayout() при загрузке страницы
+window.addEventListener('DOMContentLoaded', updateLayout);
+
+// Обновляем стили при изменении видимости subMenu
+const observer = new MutationObserver(updateLayout);
+observer.observe(subMenu, { attributes: true, attributeFilter: ['style'] });
+
+
+
+
+
