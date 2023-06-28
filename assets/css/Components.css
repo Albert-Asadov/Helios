@@ -193,13 +193,12 @@ body {
   border-color: #232323;
 }
 #rightSide .subMenu_content #content #blogMainCard .blogCard {
-  padding: 50px 140px 50px 40px;
+  padding: 50px 40px 50px 40px;
   margin-right: 89px;
   margin-top: 48px;
   margin-left: 88px;
   width: auto;
   height: 385px;
-  flex-shrink: 0;
   background: url("../image/component.png"), rgb(99, 99, 99) 0% 0%/100px 100px repeat;
   background-size: cover;
   background-position: center;
@@ -228,7 +227,9 @@ body {
   flex-direction: column;
   align-items: flex-start;
 }
-#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeFirst, #rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeSecond, #rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeThird {
+#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeFirst,
+#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeSecond,
+#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeThird {
   padding: 14.795px;
   width: 182px;
   height: 87px;
@@ -236,7 +237,9 @@ body {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
 }
-#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeFirst p, #rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeSecond p, #rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeThird p {
+#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeFirst p,
+#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeSecond p,
+#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeThird p {
   margin: 0;
   color: white;
   text-align: center;
@@ -258,6 +261,11 @@ body {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+@media screen and (min-width: 1920px) {
+  #rightSide .subMenu_content #content #blogMainCard .blogCard {
+    padding: 50px 124px 50px 90px;
+  }
 }
 
 .activeNavbar {
