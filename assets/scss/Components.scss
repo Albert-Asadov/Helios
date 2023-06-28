@@ -191,12 +191,10 @@ body {
         }
     }
 }
-
 #rightSide {
     .subMenu_content {
         display: grid;
         grid-template-columns: 1fr 5fr;
-
         #subMenu {
             display: none;
             padding: 30px 10px 30px 10px;
@@ -205,15 +203,12 @@ body {
             height: 1654px;
             border-right: 1px solid #232323;
             width: 243px;
-
             ul {
                 padding: 0;
-
                 a {
                     font-family: 'Inter', sans-serif;
                     color: #FFFFFF;
                     text-decoration: none;
-
                     li {
                         font-family: 'Inter', sans-serif;
                         margin-bottom: 10px;
@@ -222,17 +217,14 @@ body {
                         Width: 223px;
                         Height: 48px;
                         list-style: none;
-
                         &:hover {
                             background-color: #232323;
                             border-color: #232323;
                         }
                     }
-
                 }
             }
         }
-
         #content {
             #blogMainCard {
                 .blogCard {
@@ -250,10 +242,8 @@ body {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-
                     .mainTitle {
                         width: auto;
-                        height: 116px;
                         padding: 0;
                         margin: 0;
                         height: 116px;
@@ -262,7 +252,6 @@ body {
                         font-family: 'Inter', sans-serif;
                         font-weight: 700;
                     }
-
                     .sizes {
                         width: 100%;
                         height: 100%;
@@ -270,7 +259,6 @@ body {
                         display: inline-flex;
                         flex-direction: column;
                         align-items: flex-start;
-
                         .sizeFirst,
                         .sizeSecond,
                         .sizeThird {
@@ -280,7 +268,6 @@ body {
                             border-radius: 7.89px;
                             background: rgba(255, 255, 255, 0.50);
                             backdrop-filter: blur(5px);
-
                             p {
                                 margin: 0;
                                 color: white;
@@ -290,26 +277,21 @@ body {
                                 font-weight: 700;
                             }
                         }
-
                         .sizeFirst {
                             position: absolute;
                             right: 100px;
                             top: 0px;
                         }
-
                         .sizeSecond {
                             position: absolute;
                             right: 50px;
                             bottom: 97px;
                         }
-
                         .sizeThird {
                             position: absolute;
                             right: 0;
                             bottom: 0;
                         }
-
-                       
                     }
                 }
                 @media screen and (min-width: 1920px) {
@@ -319,6 +301,36 @@ body {
                     }
                 }
             
+            }
+            #textContent{
+                width: auto;
+                margin-right: 89px;
+                margin-top: 48px;
+                margin-left: 88px;
+                .text{
+                    p{
+                        font-family: 'Inter', sans-serif;
+                        font-size: 23px;
+                        font-weight: 500;
+                        line-height: 28px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: white;
+                    }
+                }
+            }
+            #image{
+                margin-right: 89px;
+                margin-top: 48px;
+                margin-left: 88px;
+                .bg-image{
+                    width: auto;
+                    height: 500px;
+                    background-image: url("../image/image 1.png");
+                    background-size: contain;
+                    background-position:left;
+                    background-repeat: no-repeat;
+                }
             }
         }
     }

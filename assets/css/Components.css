@@ -210,7 +210,6 @@ body {
 }
 #rightSide .subMenu_content #content #blogMainCard .blogCard .mainTitle {
   width: auto;
-  height: 116px;
   padding: 0;
   margin: 0;
   height: 116px;
@@ -266,6 +265,34 @@ body {
   #rightSide .subMenu_content #content #blogMainCard .blogCard {
     padding: 50px 124px 50px 90px;
   }
+}
+#rightSide .subMenu_content #content #textContent {
+  width: auto;
+  margin-right: 89px;
+  margin-top: 48px;
+  margin-left: 88px;
+}
+#rightSide .subMenu_content #content #textContent .text p {
+  font-family: "Inter", sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+#rightSide .subMenu_content #content #image {
+  margin-right: 89px;
+  margin-top: 48px;
+  margin-left: 88px;
+}
+#rightSide .subMenu_content #content #image .bg-image {
+  width: auto;
+  height: 500px;
+  background-image: url("../image/image 1.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 .activeNavbar {
