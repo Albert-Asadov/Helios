@@ -72,16 +72,14 @@ const content = document.getElementById('content');
 
 function updateLayout() {
   if (getComputedStyle(subMenu).display === 'none') {
-    content.style.gridColumn = '1 / span 5'; // Занимает 1fr
+    content.style.gridColumn = '1 / span 5'; 
   } else {
-    subMenu.style.gridColumn = '1 / span 1'; // Занимает 1fr
-    content.style.gridColumn = '2 / span 5'; // Занимает 5fr
+    subMenu.style.gridColumn = '1 / span 1'; 
+    content.style.gridColumn = '2 / span 5'; 
   }
 }
 
-
 window.addEventListener('DOMContentLoaded', updateLayout);
-
 
 const observer = new MutationObserver(updateLayout);
 observer.observe(subMenu, { attributes: true, attributeFilter: ['style'] });
