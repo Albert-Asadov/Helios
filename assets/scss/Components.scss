@@ -158,9 +158,10 @@ body {
 
                                         .buttonNavPlanned {
                                             a {
+                                                color: #EAF0FE;
+                                                border: 1px solid #302C2C;
+                                                background-color: #302C2C;
                                                 border-radius: 22px;
-                                                border: 1px solid #5286F5;
-                                                background-color: #EAF0FE;
                                                 padding: 7px 16px 0px 16px;
                                                 display: inline-block;
                                                 text-decoration: none;
@@ -197,7 +198,7 @@ body {
             padding: 30px 10px 30px 10px;
             z-index: 6;
             background-color: #000;
-            height: 1654px;
+            height: 2208px;
             border-right: 1px solid #232323;
             width: 243px;
             ul {
@@ -329,7 +330,6 @@ body {
                 }
             }
             #Title-text{
-                padding-bottom: 100px;
                 margin-right: 89px;
                 margin-top: 48px;
                 margin-left: 88px;
@@ -372,6 +372,142 @@ body {
                         font-weight: 500;
                         text-align: justify;
                     }
+                }
+            }
+            #iframe{
+                padding-bottom: 50px;
+                margin-right: 89px;
+                margin-top: 48px;
+                margin-left: 88px;
+                iframe{
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    #getStarted {
+        position: relative;
+        .bg-image {
+            left: 75px;
+            bottom: 30px;
+            position: absolute;
+            width: 942.8610000000001px;
+            background-repeat: no-repeat;
+            height: 393.816px;
+            background-size: cover;
+            transform: rotate(0deg);
+            opacity: 0.9;
+            background-image: url("../image/bg-img_blue.png");
+        }
+        @media screen and (min-width: 1920px) {
+            .bg-image {
+                left: 75px;
+                bottom: 90px;
+                position: absolute;
+                width: 1264.8609999999999px;
+                background-repeat: no-repeat;
+                height: 393.816px;
+            }
+        }
+        .cardContent {
+            width: 100%;
+            border-top: 1px solid #232323;
+            background: linear-gradient(90deg, rgba(35, 30, 40, 0.30) 0%, rgba(34, 29, 39, 0.30) 100%);
+            backdrop-filter: blur(15px);
+            padding: 40px 30px;
+            gap: 70px;
+            flex-shrink: 0;
+            .title {
+                h3 {
+                    font-size: 42px;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 700;
+                    background: linear-gradient(to right, #9E06CD, #3566E7);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                }
+            }
+            .text {
+                width: 714px;
+                margin-top: 30px;
+                display: flex;
+                height: 112px;
+                flex-direction: column;
+                p {
+                    font-family: 'Inter', sans-serif;
+                    color: var(--solid-dark-gray-d-75, #A1A6B4);
+                    font-size: 20px;
+                }
+            }
+            .navigationButtons {
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+                .learnMore {
+                    a {
+                        width: 123px;
+                        display: inline-flex;
+                        height: 48px;
+                        padding: 0px 16px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        flex-shrink: 0;
+                        text-decoration: none;
+                        border-radius: 12px;
+                        border: 1px solid var(--outline-outline-medium, #CACDD5);
+                        background: var(--white, #FFF);
+                        color: var(--text-text-medium, #525C76);
+                        font-size: 16px;
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 700;
+                    }
+                }
+                .getStarted {
+                    margin-left: 20px;
+                    a {
+                        width: 125px;
+                        display: inline-flex;
+                        height: 48px;
+                        padding: 0px 16px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        flex-shrink: 0;
+                        text-decoration: none;
+                        border-radius: 12px;
+                        border: 1px solid var(--outline-outline-medium, #CACDD5);
+                        background: var(--solid-primary-p-300, #2E6DF3);
+                        color: var(--solid-primary-p-50, #EAF0FE);
+                        font-size: 16px;
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 700;
+                        border-color: #2E6DF3;
+                    }
+                }
+            }
+            ul {
+                margin-top: 70px;
+                display: flex;
+                align-items: flex-start;
+                gap: 30px;
+                align-self: stretch;
+                padding: 0;
+                .privacy {
+                    list-style: none;
+                    color: #FFF;
+                    font-size: 16px;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 600;
+                }
+                .Lightberry {
+                    list-style: none;
+                    color: var(--solid-dark-gray-d-200, #404B67);
+                    font-size: 16px;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 600;
                 }
             }
         }
