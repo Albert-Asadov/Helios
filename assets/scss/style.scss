@@ -314,6 +314,9 @@ body {
             }
         }
         .cards-content {
+            a{
+                text-decoration: none;
+            }
             .card {
                 &:hover {
                     transform: rotateX(360deg);

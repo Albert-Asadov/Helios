@@ -298,6 +298,10 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 700;
 }
+.rightSide #cards .cards-content a,
+.rightSide #desighn .cards-content a {
+  text-decoration: none;
+}
 .rightSide #cards .cards-content .card,
 .rightSide #desighn .cards-content .card {
   width: 100%;
