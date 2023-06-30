@@ -8,7 +8,7 @@ body {
   background: var(--black, #000);
 }
 
-.flexColumns {
+.Home {
   display: grid;
   grid-template-columns: 1fr 5fr;
 }
@@ -141,10 +141,10 @@ body {
   border-radius: 10px;
 }
 #leftSide .content nav ul .component .accordion .accordion-item .accordion-content ul li .buttonNavPlanned a {
+  border-radius: 22px;
   color: #EAF0FE;
   border: 1px solid #302C2C;
   background-color: #302C2C;
-  border-radius: 22px;
   padding: 7px 16px 0px 16px;
   display: inline-block;
   text-decoration: none;
@@ -159,28 +159,28 @@ body {
   background-color: #0C0A0D;
 }
 
-#rightSide .subMenu_content {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-}
-#rightSide .subMenu_content #subMenu {
-  display: block;
+#subMenu {
+  display: none;
   padding: 30px 10px 30px 10px;
   z-index: 6;
   background-color: #000;
-  height: 2208px;
+  height: 1654px;
+  position: absolute;
+  z-index: 9999;
+  left: 353px;
+  top: 0;
   border-right: 1px solid #232323;
   width: 243px;
 }
-#rightSide .subMenu_content #subMenu ul {
+#subMenu ul {
   padding: 0;
 }
-#rightSide .subMenu_content #subMenu ul a {
+#subMenu ul a {
   font-family: "Inter", sans-serif;
   color: #FFFFFF;
   text-decoration: none;
 }
-#rightSide .subMenu_content #subMenu ul a li {
+#subMenu ul a li {
   font-family: "Inter", sans-serif;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -189,7 +189,47 @@ body {
   Height: 48px;
   list-style: none;
 }
-#rightSide .subMenu_content #subMenu ul a li:hover {
+#subMenu ul a li:hover {
+  background-color: #232323;
+  border-color: #232323;
+}
+
+@media screen and (min-width: 1920px) {
+  #subMenu {
+    height: 1888px;
+  }
+}
+#rightSide .subMenu_content {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+#rightSide .subMenu_content #subMenuStyle {
+  display: block;
+  padding: 30px 10px 30px 10px;
+  z-index: 6;
+  background-color: #000;
+  height: 2208px;
+  border-right: 1px solid #232323;
+  width: 243px;
+}
+#rightSide .subMenu_content #subMenuStyle ul {
+  padding: 0;
+}
+#rightSide .subMenu_content #subMenuStyle ul a {
+  font-family: "Inter", sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#rightSide .subMenu_content #subMenuStyle ul a li {
+  font-family: "Inter", sans-serif;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 14px 15px 14px 15px;
+  Width: 223px;
+  Height: 48px;
+  list-style: none;
+}
+#rightSide .subMenu_content #subMenuStyle ul a li:hover {
   background-color: #232323;
   border-color: #232323;
 }

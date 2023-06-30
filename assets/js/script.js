@@ -59,7 +59,7 @@ activeHover.forEach(e => {
 });
 
 window.addEventListener("click", function() {
-  // SubMenu.style.display = "none";
+  SubMenu.style.display = "none";
   activeHover.forEach(function(element) {
     element.classList.remove("activeNavbar");
   });

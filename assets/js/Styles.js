@@ -1,6 +1,7 @@
 
 const accordionItems = document.querySelectorAll('.accordion-item');
 var activeHover = document.querySelectorAll(".hoverActive");
+var SubMenu = document.getElementById("subMenu");
 
 function toggleAccordion() {
   const content = this.nextElementSibling;
@@ -50,8 +51,16 @@ activeHover.forEach(function(element) {
   });
 });
 
+activeHover.forEach(e => {
+  e.addEventListener("click", function(e) {
+    e.stopPropagation();
+    SubMenu.style.display = "block";
+  });
+});
 
-
-
-
-
+window.addEventListener("click", function() {
+  SubMenu.style.display = "none";
+  activeHover.forEach(function(element) {
+    element.classList.remove("activeNavbar");
+  });
+});
