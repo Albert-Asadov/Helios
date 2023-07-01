@@ -194,78 +194,22 @@ body {
   border-color: #232323;
 }
 #rightSide .subMenu_content #content #blogMainCard .blogCard {
-  padding: 50px 40px 50px 40px;
   margin-right: 89px;
   margin-top: 48px;
   margin-left: 88px;
   width: auto;
   height: 385px;
-  background: url("../image/component.png"), rgb(99, 99, 99) 0% 0%/100px 100px repeat;
-  background-size: cover;
-  background-position: center;
   border-radius: 18px;
   border: 1px solid #232323;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#rightSide .subMenu_content #content #blogMainCard .blogCard .mainTitle {
-  width: auto;
-  padding: 0;
-  margin: 0;
-  height: 116px;
-  color: #FFF;
-  font-size: 90px;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-}
-#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes {
+#rightSide .subMenu_content #content #blogMainCard .blogCard img {
+  border-radius: 18px;
   width: 100%;
   height: 100%;
-  position: relative;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeFirst,
-#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeSecond,
-#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeThird {
-  padding: 14.795px;
-  width: 182px;
-  height: 87px;
-  border-radius: 7.89px;
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
-}
-#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeFirst p,
-#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeSecond p,
-#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeThird p {
-  margin: 0;
-  color: white;
-  text-align: center;
-  font-size: 46px;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-}
-#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeFirst {
-  position: absolute;
-  right: 100px;
-  top: 0px;
-}
-#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeSecond {
-  position: absolute;
-  right: 50px;
-  bottom: 97px;
-}
-#rightSide .subMenu_content #content #blogMainCard .blogCard .sizes .sizeThird {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-@media screen and (min-width: 1920px) {
-  #rightSide .subMenu_content #content #blogMainCard .blogCard {
-    padding: 50px 124px 50px 90px;
-  }
+  object-fit: fill;
 }
 #rightSide .subMenu_content #content #textContent {
   width: auto;
