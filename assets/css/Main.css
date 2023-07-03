@@ -1296,16 +1296,16 @@ body {
   grid-template-columns: 1fr 5fr;
 }
 
+@media screen and (min-width: 370px) and (max-width: 900px) {
+  .Home {
+    display: grid !important;
+    grid-template-columns: 2fr !important;
+  }
+}
 @media screen and (min-width: 2100px) {
   .Home {
     display: grid !important;
     grid-template-columns: 1fr 7fr !important;
-  }
-}
-@media screen and (min-width: 370px) and (max-width: 900px) {
-  .Home {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
   }
 }
 #leftSide {
@@ -1494,6 +1494,9 @@ body {
     height: 1888px;
   }
 }
+.rightSide {
+  position: relative;
+}
 .rightSide #smallAndMediumMenu {
   border-bottom: 1px solid #232323;
   margin-left: 10px;
@@ -1515,10 +1518,136 @@ body {
 .rightSide #smallAndMediumMenu .content .image img {
   object-fit: contain;
 }
-.rightSide #smallAndMediumMenu .content .icon img {
+.rightSide #smallAndMediumMenu .content .HamburgerMenu img {
   width: 24px;
   height: 24px;
   object-fit: contain;
+}
+.rightSide #smallAndMediumNavBar {
+  overflow-y: auto;
+  max-height: calc(100vh - 100px);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  z-index: 100000;
+  background-color: #000;
+  position: absolute;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: none;
+}
+.rightSide #smallAndMediumNavBar .content nav {
+  margin-top: 37.78px;
+}
+.rightSide #smallAndMediumNavBar .content nav ul {
+  padding: 0;
+  margin: 0;
+}
+.rightSide #smallAndMediumNavBar .content nav ul .hoverGray {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 14px 15px;
+  display: flex;
+  height: 48px;
+  align-items: center;
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+.rightSide #smallAndMediumNavBar .content nav ul .hoverGray:hover {
+  background-color: #1E1E1E;
+}
+.rightSide #smallAndMediumNavBar .content nav ul .hoverGray li {
+  list-style: none;
+}
+.rightSide #smallAndMediumNavBar .content nav ul .component {
+  list-style: none;
+}
+.rightSide #smallAndMediumNavBar .content nav ul .component .accordion .accordion-item {
+  border-color: #000;
+  background-color: #000;
+}
+.rightSide #smallAndMediumNavBar .content nav ul .component .accordion .accordion-item .accordion-header {
+  border-radius: 12px;
+  padding-bottom: 0px;
+  background-color: #000;
+  border-color: #000;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  padding: 14px 15px 14px 15px;
+}
+.rightSide #smallAndMediumNavBar .content nav ul .component .accordion .accordion-item .accordion-header:hover {
+  background-color: #1E1E1E !important;
+  border-color: #1E1E1E !important;
+}
+.rightSide #smallAndMediumNavBar .content nav ul .component .accordion .accordion-item .accordion-header img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+.rightSide #smallAndMediumNavBar .content nav ul .component .accordion .accordion-item .accordion-header.active {
+  background-color: #232323;
+  border-color: #232323;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.rightSide #smallAndMediumNavBar .content nav ul .component .accordion .accordion-item .accordion-content {
+  padding: 14px 15px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-color: #232323;
+  background-color: #232323;
+  transition: max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+.rightSide #smallAndMediumNavBar .content nav ul .component .accordion .accordion-item .accordion-content ul a {
+  text-decoration: none;
+}
+.rightSide #smallAndMediumNavBar .content nav ul .component .accordion .accordion-item .accordion-content ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  cursor: pointer;
+  padding: 14px 15px 14px 15px;
+  align-items: center;
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  list-style: none;
+  padding: 14px 15px 14px 15px;
+  border-radius: 10px;
+}
+.rightSide #smallAndMediumNavBar .content nav ul .component .accordion .accordion-item .accordion-content ul li .buttonNavPlanned a {
+  border-radius: 22px;
+  color: #EAF0FE;
+  border: 1px solid #302C2C;
+  background-color: #302C2C;
+  padding: 7px 16px 0px 16px;
+  display: inline-block;
+  text-decoration: none;
+  width: 88px;
+  height: 32px;
+  line-height: 16.94px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+.rightSide #smallAndMediumNavBar .content nav ul .component .accordion .accordion-item .accordion-content ul li:hover {
+  background-color: #0C0A0D;
 }
 .rightSide #main-content .cardContent {
   width: 100%;
@@ -1799,9 +1928,10 @@ body {
 }
 @media screen and (min-width: 370px) and (max-width: 900px) {
   .rightSide #getStarted .cardContent .text {
-    width: 590px;
+    width: auto;
     margin-top: 30px;
     display: flex;
+    height: auto;
     flex-direction: column;
   }
   .rightSide #getStarted .cardContent .text p {

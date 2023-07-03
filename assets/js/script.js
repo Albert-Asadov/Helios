@@ -64,3 +64,10 @@ window.addEventListener("click", function() {
     element.classList.remove("activeNavbar");
   });
 });
+
+var HamburgerMenu = document.querySelector(".HamburgerMenu");
+var navbarHamburger = document.getElementById("smallAndMediumNavBar")
+HamburgerMenu.addEventListener("click", function(){
+  navbarHamburger.style.display = "block"
+})
+
