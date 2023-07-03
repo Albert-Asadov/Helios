@@ -248,6 +248,11 @@ body {
     }
 }
 .rightSide {
+    @media screen and ( min-width: 370px) and (max-width:900px) {
+        .rightSide {
+            overflow: hidden;
+        }
+    }
 position: relative;
     #smallAndMediumMenu {
         border-bottom: 1px solid #232323;
