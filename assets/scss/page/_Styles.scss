@@ -3,16 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
     background: var(--black, #000);
 }
-
-.flexColumns {
+.Home {
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
-
 #leftSide {
     width: 351px;
     padding-top: 53px;
@@ -20,16 +17,13 @@ body {
     padding-left: 40px;
     display: flex;
     justify-content: center;
-
     .content {
         width: 270px;
         height: 398px;
-
         .logo {
             display: flex;
             justify-content: start;
             align-items: center;
-
             .mainLogo {
                 img {
                     width: 147.27px;
@@ -38,7 +32,6 @@ body {
                     object-fit: contain;
                 }
             }
-
             .secondaryLogo {
                 img {
                     width: 39.806px;
@@ -49,14 +42,11 @@ body {
                 }
             }
         }
-
         nav {
             margin-top: 37.78px;
-
             ul {
                 padding: 0;
                 margin: 0;
-
                 .hoverGray {
                     &:hover {
                         background-color: #1E1E1E;
@@ -71,8 +61,7 @@ body {
                     align-items: center;
                     color: var(--white, #FFF);
                     font-size: 20px;
-                    font-family: 'Inter',
-                    sans-serif;
+                    font-family: 'Inter', sans-serif;
                     font-weight: 500;
                     text-decoration: none;
 
@@ -80,21 +69,17 @@ body {
                         list-style: none;
                     }
                 }
-
                 .component {
                     list-style: none;
-
                     .accordion {
                         .accordion-item {
                             border-color: #000;
                             background-color: #000;
-
                             .accordion-header {
-                                &:hover {
+                                &:hover{
                                     background-color: #1E1E1E !important;
-                                    border-color: #1E1E1E !important;
+                                     border-color: #1E1E1E !important;
                                 }
-
                                 border-radius: 12px;
                                 padding-bottom: 0px;
                                 background-color: #000;
@@ -107,11 +92,9 @@ body {
                                 align-items: center;
                                 color: var(--white, #FFF);
                                 font-size: 20px;
-                                font-family: 'Inter',
-                                sans-serif;
+                                font-family: 'Inter', sans-serif;
                                 font-weight: 500;
                                 padding: 14px 15px 14px 15px;
-
                                 img {
                                     width: 20px;
                                     height: 20px;
@@ -120,30 +103,26 @@ body {
                                     transition: transform 0.2s ease-in-out;
                                 }
                             }
-
                             .accordion-header.active {
                                 background-color: #232323;
                                 border-color: #232323;
                                 border-bottom-left-radius: 0px;
                                 border-bottom-right-radius: 0px;
-                            }
-
-                            .accordion-content {
-                                padding: 14px 15px;
+                              }
+                            .accordion-content{
+                                padding:14px 15px;
                                 border-bottom-left-radius: 12px;
                                 border-bottom-right-radius: 12px;
-                                border-color: #232323;
+                                border-color:#232323 ;
                                 background-color: #232323;
                                 transition: max-height 0.3s ease;
                                 max-height: 0;
                                 overflow: hidden;
-
-                                ul {
-                                    a {
+                                ul{
+                                    a{
                                         text-decoration: none;
                                     }
-
-                                    li {
+                                    li{
                                         display: flex;
                                         justify-content: space-between;
                                         align-items: center;
@@ -158,26 +137,24 @@ body {
                                         list-style: none;
                                         padding: 14px 15px 14px 15px;
                                         border-radius: 10px;
-
-                                        .buttonNavPlanned {
-                                            a {
+                                        .buttonNavPlanned{
+                                            a{
+                                                border-radius: 22px;
                                                 color: #EAF0FE;
                                                 border: 1px solid #302C2C;
                                                 background-color: #302C2C;
-                                                border-radius: 22px;
                                                 padding: 7px 16px 0px 16px;
                                                 display: inline-block;
                                                 text-decoration: none;
                                                 width: 88px;
                                                 height: 32px;
-                                                line-height: 16.94px;
+                                                line-height:16.94px;
                                                 font-size: 14px;
                                                 font-weight: 700;
                                                 font-family: 'Inter', sans-serif;
                                             }
                                         }
-
-                                        &:hover {
+                                        &:hover{
                                             background-color: #0C0A0D;
                                         }
                                     }
@@ -192,17 +169,56 @@ body {
         }
     }
 }
-
+#subMenu{
+    display: none;
+    padding: 30px 10px 30px 10px;
+    z-index: 6;
+    background-color: #000;
+    height: 1654px;
+    position: absolute;
+    z-index: 9999; 
+    left: 353px;
+    top: 0;
+    border-right: 1px solid #232323;
+    width: 243px;
+    ul{
+        padding: 0;
+        a{
+            font-family: 'Inter', sans-serif;
+            color: #FFFFFF;
+            text-decoration: none;
+            li{
+                font-family: 'Inter', sans-serif;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                padding: 14px 15px 14px 15px;
+                Width:223px;
+                Height:48px;
+                list-style: none;
+                &:hover{
+                    background-color: #232323;
+                    border-color: #232323;
+                }
+            }
+           
+        }
+    }
+}
+@media screen and (min-width: 1920px) {
+    #subMenu{
+        height: 1888px;
+    }
+}
 #rightSide {
     .subMenu_content {
         display: grid;
         grid-template-columns: 1fr 5fr;
-        #subMenu {
+        #subMenuStyle {
             display: block;
             padding: 30px 10px 30px 10px;
             z-index: 6;
             background-color: #000;
-            height: 2208px;
+            height: 2009px;
             border-right: 1px solid #232323;
             width: 243px;
 
@@ -252,7 +268,9 @@ body {
                         object-fit: fill;
                     }
                 }
+
             }
+
             #textContent {
                 
                 width: auto;
@@ -352,9 +370,10 @@ body {
             }
         }
     }
+
     #getStarted {
         position: relative;
-
+        margin: 0;
         .bg-image {
             left: 75px;
             bottom: 30px;

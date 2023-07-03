@@ -3,12 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     background: var(--black, #000);
+    // overflow-x: hidden;
 }
-.Home {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+.Home{
+   display: grid;
+   grid-template-columns: 1fr 5fr;
 }
 #leftSide {
     width: 351px;
@@ -24,6 +26,7 @@ body {
             display: flex;
             justify-content: start;
             align-items: center;
+
             .mainLogo {
                 img {
                     width: 147.27px;
@@ -174,7 +177,7 @@ body {
     padding: 30px 10px 30px 10px;
     z-index: 6;
     background-color: #000;
-    height: 1654px;
+    height: 1782px;
     position: absolute;
     z-index: 9999; 
     left: 353px;
@@ -206,175 +209,82 @@ body {
 }
 @media screen and (min-width: 1920px) {
     #subMenu{
-        height: 1888px;
+        height: 1781px;
     }
 }
-#rightSide {
-    .subMenu_content {
-        display: grid;
-        grid-template-columns: 1fr 5fr;
-        #subMenuStyle {
-            display: block;
-            padding: 30px 10px 30px 10px;
-            z-index: 6;
-            background-color: #000;
-            height: 2208px;
-            border-right: 1px solid #232323;
-            width: 243px;
-
-            ul {
-                padding: 0;
-
-                a {
+#rightSide{
+    #blogMainCard{
+        .blogCard {
+            border-radius: 18px;
+            border: 1px solid #232323;
+            background: #000;
+            margin-right: 89px;
+            margin-top: 48px;
+            margin-left: 88px;
+            width: auto;
+            height: 385px;
+            background: url("../image/Firefly blogg-inner.png"), rgb(99, 99, 99) 0% 0% / 100px 100px repeat;
+            background-size: cover;
+            background-position: center;
+            .titles{
+                padding-left: 102px;
+                padding-top: 124px;
+                p{
+                    width: 582px;
+                    height: 154px;
+                    color: #FFF;
+                    font-size: 47px;
                     font-family: 'Inter', sans-serif;
-                    color: #FFFFFF;
-                    text-decoration: none;
-
-                    li {
-                        font-family: 'Inter', sans-serif;
-                        margin-bottom: 10px;
-                        border-radius: 10px;
-                        padding: 14px 15px 14px 15px;
-                        Width: 223px;
-                        Height: 48px;
-                        list-style: none;
-
-                        &:hover {
-                            background-color: #232323;
-                            border-color: #232323;
-                        }
-                    }
+                    font-weight: 700;
                 }
+            }
+            @media screen and (min-width: 1920px) {
+                .title{
+                    padding-left: 250px;
+                }
+            } 
+        }
+    }
+    #text-content{
+        position: relative;
+        .image{
+            top: 361px;
+            right: 0px;
+            position: absolute;
+            background-image: url("../image/bg-imgbg-rose.png");
+            width: 690px;
+            height: 750px;
+            transform: rotate(0deg);
+            background-repeat: no-repeat;
+            opacity: 0.9;
+        }
+        @media screen and (min-width: 1920px) {
+            .image {
+                width: 787px;
             }
         }
-
-        #content {
-            #blogMainCard {
-                .blogCard {
-                    margin-right: 89px;
-                    margin-top: 48px;
-                    margin-left: 88px;
-                    width: auto;
-                    height: 385px;
-                    border-radius: 18px;
-                    border: 1px solid #232323;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    img{
-                        border-radius: 18px;
-                        width: 100%;
-                        height: 100%;
-                        object-fit: fill;
-                    }
-                }
-
+        ul{
+           
+            margin: 51px auto;
+            padding: 0;
+            width: 869px;
+            li{
+                color: #FFF;
+                font-family: 'Inter', sans-serif;
+                font-size: 23px;
+                font-family: Inter;
+                list-style: none;
             }
-
-            #textContent {
-                
-                width: auto;
-                margin-right: 89px;
-                margin-top: 48px;
-                margin-left: 88px;
-
-                .text {
-                    p {
-                        font-family: 'Inter', sans-serif;
-                        font-size: 18px;
-                        font-weight: 500;
-                        line-height: 28px;
-                        letter-spacing: 0em;
-                        text-align: left;
-                        color: var(--solid-gray-g-100, #C2C6CE);
-                    }
-                }
-            }
-
-            #image {
-                margin-right: 89px;
-                margin-top: 48px;
-                margin-left: 88px;
-
-                .bg-image {
-                    width: auto;
-                    height: 500px;
-                    background-image: url("../image/image 1.png");
-                    background-size: contain;
-                    background-position: left;
-                    background-repeat: no-repeat;
-                }
-            }
-
-            #Title-text {
-                margin-right: 89px;
-                margin-top: 48px;
-                margin-left: 88px;
-                position: relative;
-
-                .image {
-                    bottom: -115px;
-                    right: -87px;
-                    position: absolute;
-                    background-image: url("../image/bg-imgbg-rose.png");
-                    width: 690px;
-                    height: 750px;
-                    transform: rotate(0deg);
-                    background-repeat: no-repeat;
-                    opacity: 0.9;
-                }
-
-                @media screen and (min-width: 1920px) {
-                    .image {
-                        top: -140px;
-                        width: 787px;
-                    }
-                }
-
-                .title {
-                    h2 {
-                        font-family: 'Inter', sans-serif;
-                        font-size: 26px;
-                        font-weight: 700;
-                        line-height: 31px;
-                        letter-spacing: 0em;
-                        text-align: left;
-                        color: #FFF;
-                    }
-                }
-
-                .text {
-                    margin-top: 20px;
-                    width: auto;
-
-                    p {
-                        color: var(--solid-gray-g-100, #C2C6CE);
-                        font-size: 18px;
-                        font-family: 'Inter', sans-serif;
-                        font-weight: 500;
-                        text-align: justify;
-                    }
-                }
-            }
-
-            #iframe {
-                padding-bottom: 50px;
-                margin-right: 89px;
-                margin-top: 48px;
-                margin-left: 88px;
-
-                iframe {
-                    width: 100%;
-                    object-fit: contain;
-                }
+            .margin{
+                margin-top: 20px;
             }
         }
     }
-
-    #getStarted {
+    #getStarted{
+        
+        margin-top: 50px;
         position: relative;
-
-        .bg-image {
+        .bg-image{
             left: 75px;
             bottom: 30px;
             position: absolute;
@@ -386,7 +296,6 @@ body {
             opacity: 0.9;
             background-image: url("../image/bg-img_blue.png");
         }
-
         @media screen and (min-width: 1920px) {
             .bg-image {
                 left: 75px;
@@ -396,8 +305,7 @@ body {
                 background-repeat: no-repeat;
                 height: 393.816px;
             }
-        }
-
+        }    
         .cardContent {
             width: 100%;
             border-top: 1px solid #232323;
@@ -406,38 +314,33 @@ body {
             padding: 40px 30px;
             gap: 70px;
             flex-shrink: 0;
-
             .title {
                 h3 {
                     font-size: 42px;
                     font-family: 'Inter', sans-serif;
                     font-weight: 700;
-                    background: linear-gradient(to right, #9E06CD, #3566E7);
+                    background: linear-gradient(to right, #9E06CD ,#3566E7);
                     -webkit-background-clip: text;
                     background-clip: text;
                     color: transparent;
                 }
             }
-
             .text {
                 width: 714px;
                 margin-top: 30px;
                 display: flex;
                 height: 112px;
                 flex-direction: column;
-
                 p {
                     font-family: 'Inter', sans-serif;
                     color: var(--solid-dark-gray-d-75, #A1A6B4);
                     font-size: 20px;
                 }
             }
-
             .navigationButtons {
                 display: flex;
                 align-items: center;
                 margin-top: 30px;
-
                 .learnMore {
                     a {
                         width: 123px;
@@ -458,10 +361,8 @@ body {
                         font-weight: 700;
                     }
                 }
-
                 .getStarted {
                     margin-left: 20px;
-
                     a {
                         width: 125px;
                         display: inline-flex;
@@ -483,24 +384,21 @@ body {
                     }
                 }
             }
-
-            ul {
+            ul{
                 margin-top: 70px;
                 display: flex;
                 align-items: flex-start;
                 gap: 30px;
                 align-self: stretch;
                 padding: 0;
-
-                .privacy {
+                .privacy{
                     list-style: none;
                     color: #FFF;
                     font-size: 16px;
                     font-family: 'Inter', sans-serif;
                     font-weight: 600;
                 }
-
-                .Lightberry {
+                .Lightberry{
                     list-style: none;
                     color: var(--solid-dark-gray-d-200, #404B67);
                     font-size: 16px;
@@ -511,8 +409,7 @@ body {
         }
     }
 }
-
-.activeNavbar {
+.activeNavbar{
     background-color: #000 !important;
     border-color: #000 !important;
 }

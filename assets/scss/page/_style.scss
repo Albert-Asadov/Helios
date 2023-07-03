@@ -238,9 +238,9 @@ body {
             .text {
                 margin-top: 30px;
                 display: flex;
-                height: 112px;
                 flex-direction: column;
                 p {
+                    margin: 0;
                     font-family: 'Inter', sans-serif;
                     color: var(--solid-dark-gray-d-75, #A1A6B4);
                     font-size: 20px;
@@ -252,7 +252,7 @@ body {
                 margin-top: 30px;
                 .learnMore {
                     a {
-                        width: 123px;
+                        width: 125px;
                         display: inline-flex;
                         height: 48px;
                         padding: 0px 16px;
@@ -296,6 +296,43 @@ body {
             }
         }
     }
+    @media screen and (max-width: 390px) {
+        #main-content {
+            .cardContent {
+                width: 100%;
+                width: auto;
+                height: auto;
+                background: url("assets/image/Noise & Texture.jpg") lightgray 0% 0% / 100px 100px repeat;
+                border-radius: 18px;
+                border: 1px solid #232323;
+                background: #000;
+                padding: 40px 40px 40px 40px;
+                .title {
+                    h2 {
+                        font-size: 40px;
+                    }
+                }
+                .navigationButtons {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 30px;
+                    .learnMore {
+                        a {
+                            width: 135px;
+                        }
+                    }
+                    .getStarted {
+                        margin-left: 20px;
+                        a {
+                            width: 135px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     #cards,
     #desighn {
         position: relative;
@@ -364,10 +401,16 @@ body {
                             margin: 0;
                         }
                     }
+                    @media screen and (max-width: 390px) {
+                        .textContent {
+                            width: 427px;
+                        }
+                    }
                 }
             }
         }
     }
+ 
     #desighn {
         position: relative;
 
@@ -408,6 +451,7 @@ body {
                 height: 393.816px;
             }
         }
+
         .cardContent {
             width: 100%;
             border-top: 1px solid #232323;
@@ -437,6 +481,19 @@ body {
                     font-family: 'Inter', sans-serif;
                     color: var(--solid-dark-gray-d-75, #A1A6B4);
                     font-size: 20px;
+                }
+            }
+            @media screen and (max-width: 390px) {
+                .text {
+                    width: 590px;
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    p {
+                        font-family: 'Inter', sans-serif;
+                        color: var(--solid-dark-gray-d-75, #A1A6B4);
+                        font-size: 20px;
+                    }
                 }
             }
             .navigationButtons {
