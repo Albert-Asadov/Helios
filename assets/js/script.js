@@ -40,6 +40,22 @@ accordionItems.forEach(item => {
   header.addEventListener('click', toggleAccordion);
 });
 
+
+
+// const accordionItemses = document.querySelectorAll('.accordion-items');
+
+// accordionItemses.forEach(item => {
+//   const headers = item.querySelector('.accordion-headers');
+//   const contents = item.querySelector('.accordion-contents');
+
+//   contents.style.maxHeight = null;
+//   contents.style.padding = '0';
+
+//   headers.addEventListener('click', toggleAccordion);
+// });
+
+
+
 activeHover.forEach(function(element) {
   element.addEventListener("click", function() {
     activeHover.forEach(function(item) {
