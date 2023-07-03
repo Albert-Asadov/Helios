@@ -255,7 +255,7 @@ position: relative;
         // margin-right: 10px;
         margin:0;
         padding: 0;
-        // padding: 40px;
+        padding: 20px;
         width: auto;
         .content {
             display: flex;
@@ -534,8 +534,8 @@ position: relative;
     @media screen and ( min-width: 370px) and (max-width:900px) {
         #main-content {
             .cardContent {
-                margin-left: 5px;
-                margin-right: 5px;
+                margin-left: 10px;
+                margin-right: 10px;
                 width: 100%;
                 width: auto;
                 height: auto;
@@ -543,11 +543,11 @@ position: relative;
                 border-radius: 18px;
                 border: 1px solid #232323;
                 background: #000;
-                padding: 5px 5px 5px 5px;
+                padding: 10px 10px 10px 10px;
 
                 .title {
                     h2 {
-                        font-size: 40px;
+                        font-size: 27px;
                     }
                 }
 
@@ -672,8 +672,8 @@ position: relative;
         #desighn {
             position: relative;
             margin-top: 50px;
-            margin-left: 5px;
-            margin-right: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
             .cards-content{
                 .card {
                     &:hover {
@@ -682,7 +682,7 @@ position: relative;
     
                     width: 100%;
                     display: flex;
-                    padding: 5px 5px 10px 5px;
+                    padding: 10px 10px 20px 10px;
                 }
             }
         }
