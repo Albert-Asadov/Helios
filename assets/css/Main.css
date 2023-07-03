@@ -1296,6 +1296,12 @@ body {
   grid-template-columns: 1fr 5fr;
 }
 
+@media screen and (max-width: 390px) {
+  .Home {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+}
 #leftSide {
   width: 351px;
   padding-top: 53px;
@@ -1482,6 +1488,31 @@ body {
     height: 1888px;
   }
 }
+.rightSide #smallAndMediumMenu {
+  border-bottom: 1px solid #232323;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 40px;
+}
+.rightSide #smallAndMediumMenu .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rightSide #smallAndMediumMenu .content .image {
+  height: 25.5497379303px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.rightSide #smallAndMediumMenu .content .image img {
+  object-fit: contain;
+}
+.rightSide #smallAndMediumMenu .content .icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
 .rightSide #main-content .cardContent {
   width: 100%;
   margin-left: 88px;
@@ -1563,6 +1594,8 @@ body {
 }
 @media screen and (max-width: 390px) {
   .rightSide #main-content .cardContent {
+    margin-left: 10px;
+    margin-right: 10px;
     width: 100%;
     width: auto;
     height: auto;
@@ -1677,6 +1710,15 @@ body {
   .rightSide #cards .cards-content .card .typography-content .textContent,
   .rightSide #desighn .cards-content .card .typography-content .textContent {
     width: 427px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .rightSide #cards,
+  .rightSide #desighn {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 .rightSide #desighn {
