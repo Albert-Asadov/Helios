@@ -41,21 +41,6 @@ accordionItems.forEach(item => {
 });
 
 
-
-// const accordionItemses = document.querySelectorAll('.accordion-items');
-
-// accordionItemses.forEach(item => {
-//   const headers = item.querySelector('.accordion-headers');
-//   const contents = item.querySelector('.accordion-contents');
-
-//   contents.style.maxHeight = null;
-//   contents.style.padding = '0';
-
-//   headers.addEventListener('click', toggleAccordion);
-// });
-
-
-
 activeHover.forEach(function(element) {
   element.addEventListener("click", function() {
     activeHover.forEach(function(item) {
@@ -74,34 +59,45 @@ activeHover.forEach(e => {
   });
 });
 
-window.addEventListener("click", function() {
+window.addEventListener("click", function(e) {
+  e.stopPropagation()
   SubMenu.style.display = "none";
   activeHover.forEach(function(element) {
     element.classList.remove("activeNavbar");
   });
 });
 
-
-
-
 var HamburgerMenu = document.querySelector(".HamburgerMenu");
-var navbarHamburger = document.getElementById("smallAndMediumNavBar")
-HamburgerMenu.addEventListener("click", function(){
-  navbarHamburger.style.display = "block"
-})
+var navbarHamburger = document.getElementById("smallAndMediumNavBar");
 
+HamburgerMenu.addEventListener("click", function(e) {
+  e.stopPropagation();
+  navbarHamburger.style.display = "block";
+});
 
+navbarHamburger.addEventListener("click", function(e) {
+  e.stopPropagation();
+});
 
 var SubMenus = document.getElementById("subMenus");
 var menuTitle = document.querySelector(".menuTitle");
-menuTitle.addEventListener("click", function(){
-  SubMenus.style.display = "none"
-})
+
+menuTitle.addEventListener("click", function(e) {
+  e.stopPropagation();
+  SubMenus.style.display = "none";
+});
 
 var hoverActives = document.querySelectorAll(".hoverActives");
 
-hoverActives.forEach(e=>{
-  e.addEventListener("click", function(){
-    SubMenus.style.display="block"
-  })
-})
+hoverActives.forEach(function(e) {
+  e.addEventListener("click", function(es) {
+    es.stopPropagation();
+    SubMenus.style.display = "block";
+  });
+});
+
+window.addEventListener("click", function(e) {
+  e.stopPropagation();
+  SubMenus.style.display = "none";
+  navbarHamburger.style.display = "none";
+});
