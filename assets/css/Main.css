@@ -1682,7 +1682,7 @@ body {
   background-color: #000;
   height: 100%;
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   border-right: 1px solid #232323;
   width: 100%;
@@ -1729,6 +1729,16 @@ body {
 .rightSide #subMenus ul a li:hover {
   background-color: #232323;
   border-color: #232323;
+}
+@media screen and (min-width: 375px) and (max-width: 640px) {
+  .rightSide #subMenus {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  .rightSide #subMenus {
+    width: calc(40% - (1007px - 100%) / 366);
+  }
 }
 .rightSide #main-content .cardContent {
   width: 100%;
