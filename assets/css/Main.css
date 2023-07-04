@@ -1503,6 +1503,7 @@ body {
   }
 }
 .rightSide #smallAndMediumMenu {
+  padding: 20px;
   border-bottom: 1px solid #232323;
   margin: 0;
   padding: 0;
@@ -1651,6 +1652,28 @@ body {
 }
 .rightSide #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-content ul li:hover {
   background-color: #0C0A0D;
+}
+@media screen and (min-width: 375px) and (max-width: 640px) {
+  .rightSide #smallAndMediumNavBar {
+    right: 0;
+    width: 80%;
+    padding: 30px;
+  }
+  .rightSide #smallAndMediumNavBar .contents {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  .rightSide #smallAndMediumNavBar {
+    right: 0;
+    width: calc(40% - (1007px - 100%) / 366);
+    padding: 30px;
+  }
+  .rightSide #smallAndMediumNavBar .contents {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 .rightSide #subMenus {
   z-index: 100000;
