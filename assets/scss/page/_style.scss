@@ -3,11 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
     background: var(--black, #000);
 }
-
 .Home {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -308,7 +306,7 @@ position: relative;
                     padding: 0;
                     margin: 0;
     
-                    .hoverGray {
+                    .hoverGrays {
                         &:hover {
                             background-color: #1E1E1E;
                         }
@@ -439,6 +437,67 @@ position: relative;
                     }
     
                 }
+            }
+        }
+    }
+
+    #subMenus {
+        z-index: 100000;
+        display: none;
+        padding: 30px 10px 30px 10px;
+        background-color: #000;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-right: 1px solid #232323;
+        width: 100%;
+    
+        ul {
+            padding: 0;
+            .menuTitle{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                padding: 14px 15px 14px 15px;
+                font-family: 'Inter', sans-serif;
+                color: #FFFFFF;
+                .icon{
+                    img{
+                        width: 24px;
+                        height: 24px;
+                        object-fit: contain;
+                    }
+                }
+                .text{
+                    margin-left: 10px;
+                }
+                &:hover {
+                    background-color: #232323;
+                    border-color: #232323;
+                }
+            }
+            a {
+                font-family: 'Inter', sans-serif;
+                color: #FFFFFF;
+                text-decoration: none;
+                li {
+                    font-family: 'Inter', sans-serif;
+                    margin-bottom: 10px;
+                    border-radius: 10px;
+                    padding: 14px 15px 14px 15px;
+                    Width: 223px;
+                    Height: 48px;
+                    list-style: none;
+    
+                    &:hover {
+                        background-color: #232323;
+                        border-color: #232323;
+                    }
+                }
+    
             }
         }
     }
@@ -874,6 +933,11 @@ position: relative;
 }
 
 .activeHoverLiSubMenu {
+    background-color: #232323;
+    border-color: #232323;
+}
+
+.activeHoverLiSubMenus {
     background-color: #232323;
     border-color: #232323;
 }

@@ -81,9 +81,27 @@ window.addEventListener("click", function() {
   });
 });
 
+
+
+
 var HamburgerMenu = document.querySelector(".HamburgerMenu");
 var navbarHamburger = document.getElementById("smallAndMediumNavBar")
 HamburgerMenu.addEventListener("click", function(){
   navbarHamburger.style.display = "block"
 })
 
+
+
+var SubMenus = document.getElementById("subMenus");
+var menuTitle = document.querySelector(".menuTitle");
+menuTitle.addEventListener("click", function(){
+  SubMenus.style.display = "none"
+})
+
+var hoverActives = document.querySelectorAll(".hoverActives");
+
+hoverActives.forEach(e=>{
+  e.addEventListener("click", function(){
+    SubMenus.style.display="block"
+  })
+})
