@@ -486,11 +486,11 @@ body {
     margin-top: 48px;
     margin-left: 0px;
     width: auto;
-    height: 148px;
+    height: 180px;
   }
   #rightSide #blogMainCards .blogCards .titles {
     padding-left: 0px;
-    padding-top: 50px;
+    padding-top: 66px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1162,11 +1162,18 @@ body {
 }
 @media screen and (min-width: 370px) and (max-width: 900px) {
   #rightSide #blogMainCard .blogCard {
+    border-radius: 0px;
     margin-top: 40px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
     width: auto;
-    height: 385px;
+    height: 180px;
+  }
+  #rightSide #blogMainCard .blogCard .title {
+    padding-top: 38px;
+  }
+  #rightSide #blogMainCard .blogCard .title p {
+    font-size: 70px;
   }
 }
 #rightSide #cards {

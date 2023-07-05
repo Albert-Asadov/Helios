@@ -575,11 +575,19 @@ position: relative;
     @media screen and (min-width: 370px) and (max-width:900px) {
         #blogMainCard {
             .blogCard {
+                border-radius: 0px;
                 margin-top: 40px;
-                margin-right: 10px;
-                margin-left: 10px;
+                margin-right: 0px;
+                margin-left: 0px;
                 width: auto;
-                height: 385px;
+                height: 180px;
+                .title{
+                  padding-top: 38px;
+                    p{
+                    font-size: 70px;
+
+                    }
+                }
             }
         }
     }
