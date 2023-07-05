@@ -225,3 +225,8 @@ menuTitle.addEventListener("click", function(e) {
   e.stopPropagation();
   SubMenus.style.display = "none";
 });
+document.addEventListener("click", function(e) {
+  if (!menuTitle.contains(e.target) && !SubMenus.contains(e.target)) {
+    SubMenus.style.display = "none";
+  }
+});
