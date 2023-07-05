@@ -104,10 +104,10 @@
 //   navbarHamburger.style.display = "none";
 // });
 
-
 const accordionItems = document.querySelectorAll('.accordion-item');
 const activeHover = document.querySelectorAll(".hoverActive");
 const SubMenu = document.getElementById("subMenu");
+const SubMenus = document.getElementById("subMenus");
 
 function toggleAccordion() {
   const content = this.nextElementSibling;
@@ -146,7 +146,6 @@ accordionItems.forEach(item => {
   header.addEventListener('click', toggleAccordion);
 });
 
-
 activeHover.forEach(element => {
   element.addEventListener("click", function() {
     activeHover.forEach(item => {
@@ -161,18 +160,21 @@ activeHover.forEach(element => {
 activeHover.forEach(e => {
   e.addEventListener("click", function(e) {
     e.stopPropagation();
-    SubMenu.style.display = "block";
+    SubMenus.style.display = "block";
   });
 });
 
 window.addEventListener("click", function(e) {
-  e.stopPropagation();
-  SubMenu.style.display = "none";
-  activeHover.forEach(element => {
-    element.classList.remove("activeNavbar");
-  });
+  if (!SubMenu.contains(e.target)) {
+    SubMenu.style.display = "none";
+    activeHover.forEach(element => {
+      element.classList.remove("activeNavbar");
+    });
+  }
+  if (!SubMenus.contains(e.target)) {
+    SubMenus.style.display = "none";
+  }
 });
-
 
 var HamburgerMenu = document.querySelector(".HamburgerMenu");
 var navbarHamburger = document.getElementById("smallAndMediumNavBar");
@@ -190,7 +192,6 @@ navbarHamburger.addEventListener("touchstart", function(e) {
   e.stopPropagation();
 });
 
-var SubMenus = document.getElementById("subMenus");
 var menuTitle = document.querySelector(".menuTitle");
 
 menuTitle.addEventListener("click", function(e) {
@@ -207,14 +208,20 @@ hoverActives.forEach(function(e) {
   });
 });
 
-window.addEventListener("click", function(e) {
+SubMenus.addEventListener("click", function(e) {
   e.stopPropagation();
-  SubMenus.style.display = "none";
-  navbarHamburger.style.display = "none";
 });
 
-window.addEventListener("touchstart", function(e) {
+window.addEventListener("click", function(e) {
+  if (!navbarHamburger.contains(e.target)) {
+    navbarHamburger.style.display = "none";
+  }
+  if (!menuTitle.contains(e.target) && !SubMenus.contains(e.target)) {
+    SubMenus.style.display = "none";
+  }
+});
+
+menuTitle.addEventListener("click", function(e) {
   e.stopPropagation();
   SubMenus.style.display = "none";
-  navbarHamburger.style.display = "none";
 });
