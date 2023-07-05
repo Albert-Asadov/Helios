@@ -13,6 +13,18 @@ body {
   grid-template-columns: 1fr 5fr;
 }
 
+@media screen and (min-width: 370px) and (max-width: 900px) {
+  .Home {
+    display: grid !important;
+    grid-template-columns: 2fr !important;
+  }
+}
+@media screen and (min-width: 2100px) {
+  .Home {
+    display: grid !important;
+    grid-template-columns: 1fr 7fr !important;
+  }
+}
 #leftSide {
   width: 351px;
   padding-top: 53px;
@@ -199,7 +211,245 @@ body {
     height: 1781px;
   }
 }
-#rightSide #blogMainCard .blogCard {
+#rightSide #smallAndMediumMenu {
+  padding: 20px;
+  border-bottom: 1px solid #232323;
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+  width: auto;
+}
+#rightSide #smallAndMediumMenu .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#rightSide #smallAndMediumMenu .content .image {
+  height: 25.5497379303px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#rightSide #smallAndMediumMenu .content .image img {
+  object-fit: contain;
+}
+#rightSide #smallAndMediumMenu .content .HamburgerMenu img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+#rightSide #smallAndMediumNavBar {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 100000;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  position: absolute;
+  display: none;
+}
+#rightSide #smallAndMediumNavBar .contents nav {
+  margin-top: 37.78px;
+}
+#rightSide #smallAndMediumNavBar .contents nav ul {
+  padding: 0;
+  margin: 0;
+}
+#rightSide #smallAndMediumNavBar .contents nav ul .hoverGrays {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 14px 15px;
+  display: flex;
+  height: 48px;
+  align-items: center;
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+#rightSide #smallAndMediumNavBar .contents nav ul .hoverGrays:hover {
+  background-color: #1E1E1E;
+}
+#rightSide #smallAndMediumNavBar .contents nav ul .hoverGrays li {
+  list-style: none;
+}
+#rightSide #smallAndMediumNavBar .contents nav ul .component {
+  list-style: none;
+}
+#rightSide #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item {
+  border-color: #000;
+  background-color: #000;
+}
+#rightSide #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-header {
+  border-radius: 12px;
+  padding-bottom: 0px;
+  background-color: #000;
+  border-color: #000;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  padding: 14px 15px 14px 15px;
+}
+#rightSide #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-header:hover {
+  background-color: #1E1E1E !important;
+  border-color: #1E1E1E !important;
+}
+#rightSide #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-header img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+#rightSide #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-header.active {
+  background-color: #232323;
+  border-color: #232323;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#rightSide #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-content {
+  padding: 14px 15px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-color: #232323;
+  background-color: #232323;
+  transition: max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+#rightSide #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-content ul a {
+  text-decoration: none;
+}
+#rightSide #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-content ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  cursor: pointer;
+  padding: 14px 15px 14px 15px;
+  align-items: center;
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  list-style: none;
+  padding: 14px 15px 14px 15px;
+  border-radius: 10px;
+}
+#rightSide #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-content ul li .buttonNavPlanned a {
+  border-radius: 22px;
+  color: #EAF0FE;
+  border: 1px solid #302C2C;
+  background-color: #302C2C;
+  padding: 7px 16px 0px 16px;
+  display: inline-block;
+  text-decoration: none;
+  width: 88px;
+  height: 32px;
+  line-height: 16.94px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+#rightSide #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-content ul li:hover {
+  background-color: #0C0A0D;
+}
+@media screen and (min-width: 375px) and (max-width: 640px) {
+  #rightSide #smallAndMediumNavBar {
+    right: 0;
+    width: 80%;
+    padding: 30px;
+  }
+  #rightSide #smallAndMediumNavBar .contents {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  #rightSide #smallAndMediumNavBar {
+    right: 0;
+    width: calc(40% - (1007px - 100%) / 366);
+    padding: 30px;
+  }
+  #rightSide #smallAndMediumNavBar .contents {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+#rightSide #subMenus {
+  z-index: 100000;
+  display: none;
+  padding: 30px 10px 30px 10px;
+  background-color: #000;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-right: 1px solid #232323;
+  width: 100%;
+}
+#rightSide #subMenus ul {
+  padding: 0;
+}
+#rightSide #subMenus ul .menuTitle {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 14px 15px 14px 15px;
+  font-family: "Inter", sans-serif;
+  color: #FFFFFF;
+}
+#rightSide #subMenus ul .menuTitle .icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+#rightSide #subMenus ul .menuTitle .text {
+  margin-left: 10px;
+}
+#rightSide #subMenus ul .menuTitle:hover {
+  background-color: #232323;
+  border-color: #232323;
+}
+#rightSide #subMenus ul a {
+  font-family: "Inter", sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#rightSide #subMenus ul a li {
+  font-family: "Inter", sans-serif;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 14px 15px 14px 15px;
+  Width: 223px;
+  Height: 48px;
+  list-style: none;
+}
+#rightSide #subMenus ul a li:hover {
+  background-color: #232323;
+  border-color: #232323;
+}
+@media screen and (min-width: 375px) and (max-width: 640px) {
+  #rightSide #subMenus {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  #rightSide #subMenus {
+    width: calc(40% - (1007px - 100%) / 366);
+  }
+}
+#rightSide #blogMainCards .blogCards {
   border-radius: 18px;
   border: 1px solid #232323;
   background: #000;
@@ -212,11 +462,11 @@ body {
   background-size: cover;
   background-position: center;
 }
-#rightSide #blogMainCard .blogCard .titles {
+#rightSide #blogMainCards .blogCards .titles {
   padding-left: 102px;
   padding-top: 124px;
 }
-#rightSide #blogMainCard .blogCard .titles p {
+#rightSide #blogMainCards .blogCards .titles p {
   width: 582px;
   height: 154px;
   color: #FFF;
@@ -225,8 +475,30 @@ body {
   font-weight: 700;
 }
 @media screen and (min-width: 1920px) {
-  #rightSide #blogMainCard .blogCard .title {
+  #rightSide #blogMainCards .blogCards .title {
     padding-left: 250px;
+  }
+}
+@media screen and (min-width: 370px) and (max-width: 900px) {
+  #rightSide #blogMainCards .blogCards {
+    border-radius: 0px;
+    margin-right: 0px;
+    margin-top: 48px;
+    margin-left: 0px;
+    width: auto;
+    height: 148px;
+  }
+  #rightSide #blogMainCards .blogCards .titles {
+    padding-left: 0px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #rightSide #blogMainCards .blogCards .titles p {
+    width: auto;
+    height: auto;
+    font-size: 30px;
   }
 }
 #rightSide #text-content {
@@ -262,6 +534,23 @@ body {
 }
 #rightSide #text-content ul .margin {
   margin-top: 20px;
+}
+@media screen and (min-width: 370px) and (max-width: 900px) {
+  #rightSide #text-content {
+    position: relative;
+  }
+  #rightSide #text-content .image {
+    width: auto;
+    height: auto;
+  }
+  #rightSide #text-content ul {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: auto;
+  }
+  #rightSide #text-content ul li {
+    font-size: 18px;
+  }
 }
 #rightSide #getStarted {
   margin-top: 50px;
