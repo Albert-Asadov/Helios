@@ -1460,9 +1460,21 @@ body {
 
 .flexColumns {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
 }
 
+@media screen and (min-width: 370px) and (max-width: 900px) {
+  .flexColumns {
+    display: grid !important;
+    grid-template-columns: 2fr !important;
+  }
+}
+@media screen and (min-width: 2100px) {
+  .flexColumns {
+    display: grid !important;
+    grid-template-columns: 1fr 7fr !important;
+  }
+}
 #leftSide {
   width: 351px;
   padding-top: 53px;
@@ -1613,7 +1625,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 5fr;
 }
-#rightSide .subMenu_contents #subMenus {
+#rightSide .subMenu_contents #subMenuses {
   display: block;
   padding: 30px 10px 30px 10px;
   z-index: 6;
@@ -1622,15 +1634,15 @@ body {
   border-right: 1px solid #232323;
   width: 243px;
 }
-#rightSide .subMenu_contents #subMenus ul {
+#rightSide .subMenu_contents #subMenuses ul {
   padding: 0;
 }
-#rightSide .subMenu_contents #subMenus ul a {
+#rightSide .subMenu_contents #subMenuses ul a {
   font-family: "Inter", sans-serif;
   color: #FFFFFF;
   text-decoration: none;
 }
-#rightSide .subMenu_contents #subMenus ul a li {
+#rightSide .subMenu_contents #subMenuses ul a li {
   font-family: "Inter", sans-serif;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -1639,11 +1651,252 @@ body {
   Height: 48px;
   list-style: none;
 }
-#rightSide .subMenu_contents #subMenus ul a li:hover {
+#rightSide .subMenu_contents #subMenuses ul a li:hover {
   background-color: #232323;
   border-color: #232323;
 }
-#rightSide .subMenu_contents #content #blogMainCard .blogCard {
+#rightSide .subMenu_contents #contents {
+  position: relative;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumMenu {
+  padding: 20px;
+  border-bottom: 1px solid #232323;
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+  width: auto;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumMenu .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumMenu .content .image {
+  height: 25.5497379303px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumMenu .content .image img {
+  object-fit: contain;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumMenu .content .HamburgerMenu img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumNavBar {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 100000;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  position: absolute;
+  display: none;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents nav {
+  margin-top: 37.78px;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents nav ul {
+  padding: 0;
+  margin: 0;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents nav ul .hoverGrays {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 14px 15px;
+  display: flex;
+  height: 48px;
+  align-items: center;
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents nav ul .hoverGrays:hover {
+  background-color: #1E1E1E;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents nav ul .hoverGrays li {
+  list-style: none;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents nav ul .component {
+  list-style: none;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item {
+  border-color: #000;
+  background-color: #000;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-header {
+  border-radius: 12px;
+  padding-bottom: 0px;
+  background-color: #000;
+  border-color: #000;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  padding: 14px 15px 14px 15px;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-header:hover {
+  background-color: #1E1E1E !important;
+  border-color: #1E1E1E !important;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-header img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-header.active {
+  background-color: #232323;
+  border-color: #232323;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-content {
+  padding: 14px 15px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-color: #232323;
+  background-color: #232323;
+  transition: max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-content ul a {
+  text-decoration: none;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-content ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  cursor: pointer;
+  padding: 14px 15px 14px 15px;
+  align-items: center;
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  list-style: none;
+  padding: 14px 15px 14px 15px;
+  border-radius: 10px;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-content ul li .buttonNavPlanned a {
+  border-radius: 22px;
+  color: #EAF0FE;
+  border: 1px solid #302C2C;
+  background-color: #302C2C;
+  padding: 7px 16px 0px 16px;
+  display: inline-block;
+  text-decoration: none;
+  width: 88px;
+  height: 32px;
+  line-height: 16.94px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-content ul li:hover {
+  background-color: #0C0A0D;
+}
+@media screen and (min-width: 375px) and (max-width: 640px) {
+  #rightSide .subMenu_contents #contents #smallAndMediumNavBar {
+    right: 0;
+    width: 80%;
+    padding: 30px;
+  }
+  #rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  #rightSide .subMenu_contents #contents #smallAndMediumNavBar {
+    right: 0;
+    width: calc(40% - (1007px - 100%) / 366);
+    padding: 30px;
+  }
+  #rightSide .subMenu_contents #contents #smallAndMediumNavBar .contents {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+#rightSide .subMenu_contents #contents #subMenus {
+  z-index: 100000;
+  display: none;
+  padding: 30px 10px 30px 10px;
+  background-color: #000;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-right: 1px solid #232323;
+  width: 100%;
+}
+#rightSide .subMenu_contents #contents #subMenus ul {
+  padding: 0;
+}
+#rightSide .subMenu_contents #contents #subMenus ul .menuTitle {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 14px 15px 14px 15px;
+  font-family: "Inter", sans-serif;
+  color: #FFFFFF;
+}
+#rightSide .subMenu_contents #contents #subMenus ul .menuTitle .icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+#rightSide .subMenu_contents #contents #subMenus ul .menuTitle .text {
+  margin-left: 10px;
+}
+#rightSide .subMenu_contents #contents #subMenus ul .menuTitle:hover {
+  background-color: #232323;
+  border-color: #232323;
+}
+#rightSide .subMenu_contents #contents #subMenus ul a {
+  font-family: "Inter", sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#rightSide .subMenu_contents #contents #subMenus ul a li {
+  font-family: "Inter", sans-serif;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 14px 15px 14px 15px;
+  Width: 223px;
+  Height: 48px;
+  list-style: none;
+}
+#rightSide .subMenu_contents #contents #subMenus ul a li:hover {
+  background-color: #232323;
+  border-color: #232323;
+}
+@media screen and (min-width: 375px) and (max-width: 640px) {
+  #rightSide .subMenu_contents #contents #subMenus {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  #rightSide .subMenu_contents #contents #subMenus {
+    width: calc(40% - (1007px - 100%) / 366);
+  }
+}
+#rightSide .subMenu_contents #contents #blogMainCard .blogCard {
   margin-right: 89px;
   margin-top: 48px;
   margin-left: 88px;
@@ -1655,19 +1908,31 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-#rightSide .subMenu_contents #content #blogMainCard .blogCard img {
+#rightSide .subMenu_contents #contents #blogMainCard .blogCard img {
   border-radius: 18px;
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
-#rightSide .subMenu_contents #content #textContent {
+@media screen and (min-width: 370px) and (max-width: 900px) {
+  #rightSide .subMenu_contents #contents #blogMainCard .blogCard {
+    margin-right: 0px;
+    margin-top: 48px;
+    margin-left: 0px;
+    height: 180px;
+    border-radius: 0px;
+  }
+  #rightSide .subMenu_contents #contents #blogMainCard .blogCard img {
+    border-radius: 0px;
+  }
+}
+#rightSide .subMenu_contents #contents #textContent {
   width: auto;
   margin-right: 89px;
   margin-top: 48px;
   margin-left: 88px;
 }
-#rightSide .subMenu_contents #content #textContent .text p {
+#rightSide .subMenu_contents #contents #textContent .text p {
   font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -1676,26 +1941,51 @@ body {
   text-align: left;
   color: var(--solid-gray-g-100, #C2C6CE);
 }
-#rightSide .subMenu_contents #content #image {
+@media screen and (min-width: 370px) and (max-width: 900px) {
+  #rightSide .subMenu_contents #contents #textContent {
+    width: auto;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 48px;
+  }
+  #rightSide .subMenu_contents #contents #textContent .text p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--solid-gray-g-100, #C2C6CE);
+  }
+}
+#rightSide .subMenu_contents #contents #image {
   margin-right: 89px;
   margin-top: 48px;
   margin-left: 88px;
 }
-#rightSide .subMenu_contents #content #image .bg-image {
+#rightSide .subMenu_contents #contents #image .imageContents {
   width: auto;
-  height: 500px;
-  background-image: url("../image/image 1.png");
-  background-size: contain;
-  background-position: left;
-  background-repeat: no-repeat;
+  height: auto;
+  object-fit: contain;
 }
-#rightSide .subMenu_contents #content #Title-text {
+#rightSide .subMenu_contents #contents #image .imageContents img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 370px) and (max-width: 900px) {
+  #rightSide .subMenu_contents #contents #image {
+    margin-right: 30px;
+    margin-top: 48px;
+    margin-left: 30px;
+  }
+}
+#rightSide .subMenu_contents #contents #Title-text {
   margin-right: 89px;
   margin-top: 48px;
   margin-left: 88px;
   position: relative;
 }
-#rightSide .subMenu_contents #content #Title-text .image {
+#rightSide .subMenu_contents #contents #Title-text .image {
   bottom: -115px;
   right: -87px;
   position: absolute;
@@ -1707,12 +1997,12 @@ body {
   opacity: 0.9;
 }
 @media screen and (min-width: 1920px) {
-  #rightSide .subMenu_contents #content #Title-text .image {
+  #rightSide .subMenu_contents #contents #Title-text .image {
     top: -140px;
     width: 787px;
   }
 }
-#rightSide .subMenu_contents #content #Title-text .title h2 {
+#rightSide .subMenu_contents #contents #Title-text .title h2 {
   font-family: "Inter", sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -1721,26 +2011,59 @@ body {
   text-align: left;
   color: #FFF;
 }
-#rightSide .subMenu_contents #content #Title-text .text {
+#rightSide .subMenu_contents #contents #Title-text .text {
   margin-top: 20px;
   width: auto;
 }
-#rightSide .subMenu_contents #content #Title-text .text p {
+#rightSide .subMenu_contents #contents #Title-text .text p {
   color: var(--solid-gray-g-100, #C2C6CE);
   font-size: 18px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   text-align: justify;
 }
-#rightSide .subMenu_contents #content #iframe {
+@media screen and (min-width: 370px) and (max-width: 900px) {
+  #rightSide .subMenu_contents #contents #Title-text {
+    margin-right: 30px;
+    margin-top: 48px;
+    margin-left: 30px;
+  }
+}
+#rightSide .subMenu_contents #contents #iframe {
   padding-bottom: 50px;
   margin-right: 89px;
   margin-top: 48px;
   margin-left: 88px;
+  width: auto;
 }
-#rightSide .subMenu_contents #content #iframe iframe {
+#rightSide .subMenu_contents #contents #iframe iframe {
   width: 100%;
   object-fit: contain;
+}
+@media screen and (min-width: 370px) and (max-width: 900px) {
+  #rightSide .subMenu_contents #contents #iframe {
+    padding-bottom: 50px;
+    margin-right: 30px;
+    margin-top: 48px;
+    margin-left: 30px;
+    width: auto;
+  }
+  #rightSide .subMenu_contents #contents #iframe iframe {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+@media screen and (min-width: 370px) and (max-width: 900px) {
+  #rightSide .subMenu_contents {
+    display: grid !important;
+    grid-template-columns: 2fr !important;
+  }
+}
+@media screen and (min-width: 2100px) {
+  #rightSide .subMenu_contents {
+    display: grid !important;
+    grid-template-columns: 1fr 7fr !important;
+  }
 }
 #rightSide #getStarteds {
   margin: 0;
@@ -1795,6 +2118,15 @@ body {
   font-family: "Inter", sans-serif;
   color: var(--solid-dark-gray-d-75, #A1A6B4);
   font-size: 20px;
+}
+@media screen and (min-width: 370px) and (max-width: 900px) {
+  #rightSide #getStarteds .cardContent .text {
+    width: auto !important;
+    margin-top: 30px;
+    display: flex;
+    height: auto !important;
+    flex-direction: column;
+  }
 }
 #rightSide #getStarteds .cardContent .navigationButtons {
   display: flex;
