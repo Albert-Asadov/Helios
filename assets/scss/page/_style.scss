@@ -212,7 +212,7 @@ body {
     left: 353px;
     top: 0;
     border-right: 1px solid #232323;
-    width: 243px;
+    width: 243px !important;
 
     ul {
         padding: 0;
@@ -652,6 +652,7 @@ position: relative;
                         font-size: 27px;
                     }
                 }
+
                 .navigationButtons {
                     display: flex;
                     justify-content: start;
