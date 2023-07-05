@@ -3534,6 +3534,18 @@ body {
     grid-template-columns: 1fr 7fr !important;
   }
 }
+@media screen and (min-width: 370px) and (max-width: 900px) {
+  .Home {
+    display: grid !important;
+    grid-template-columns: 2fr !important;
+  }
+}
+@media screen and (min-width: 2100px) {
+  .Home {
+    display: grid !important;
+    grid-template-columns: 1fr 7fr !important;
+  }
+}
 #leftSide {
   width: 351px;
   padding-top: 53px;
@@ -3720,6 +3732,247 @@ body {
     height: 1888px;
   }
 }
+#rightside {
+  position: relative;
+}
+#rightside #smallAndMediumMenu {
+  padding: 20px;
+  border-bottom: 1px solid #232323;
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+  width: auto;
+}
+#rightside #smallAndMediumMenu .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#rightside #smallAndMediumMenu .content .image {
+  height: 25.5497379303px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#rightside #smallAndMediumMenu .content .image img {
+  object-fit: contain;
+}
+#rightside #smallAndMediumMenu .content .HamburgerMenu img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+#rightside #smallAndMediumNavBar {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 100000;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  position: absolute;
+  display: none;
+}
+#rightside #smallAndMediumNavBar .contents nav {
+  margin-top: 37.78px;
+}
+#rightside #smallAndMediumNavBar .contents nav ul {
+  padding: 0;
+  margin: 0;
+}
+#rightside #smallAndMediumNavBar .contents nav ul .hoverGrays {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 14px 15px;
+  display: flex;
+  height: 48px;
+  align-items: center;
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+#rightside #smallAndMediumNavBar .contents nav ul .hoverGrays:hover {
+  background-color: #1E1E1E;
+}
+#rightside #smallAndMediumNavBar .contents nav ul .hoverGrays li {
+  list-style: none;
+}
+#rightside #smallAndMediumNavBar .contents nav ul .component {
+  list-style: none;
+}
+#rightside #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item {
+  border-color: #000;
+  background-color: #000;
+}
+#rightside #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-header {
+  border-radius: 12px;
+  padding-bottom: 0px;
+  background-color: #000;
+  border-color: #000;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  padding: 14px 15px 14px 15px;
+}
+#rightside #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-header:hover {
+  background-color: #1E1E1E !important;
+  border-color: #1E1E1E !important;
+}
+#rightside #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-header img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+#rightside #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-header.active {
+  background-color: #232323;
+  border-color: #232323;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#rightside #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-content {
+  padding: 14px 15px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-color: #232323;
+  background-color: #232323;
+  transition: max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+#rightside #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-content ul a {
+  text-decoration: none;
+}
+#rightside #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-content ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  cursor: pointer;
+  padding: 14px 15px 14px 15px;
+  align-items: center;
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  list-style: none;
+  padding: 14px 15px 14px 15px;
+  border-radius: 10px;
+}
+#rightside #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-content ul li .buttonNavPlanned a {
+  border-radius: 22px;
+  color: #EAF0FE;
+  border: 1px solid #302C2C;
+  background-color: #302C2C;
+  padding: 7px 16px 0px 16px;
+  display: inline-block;
+  text-decoration: none;
+  width: 88px;
+  height: 32px;
+  line-height: 16.94px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+#rightside #smallAndMediumNavBar .contents nav ul .component .accordion .accordion-item .accordion-content ul li:hover {
+  background-color: #0C0A0D;
+}
+@media screen and (min-width: 375px) and (max-width: 640px) {
+  #rightside #smallAndMediumNavBar {
+    right: 0;
+    width: 80%;
+    padding: 30px;
+  }
+  #rightside #smallAndMediumNavBar .contents {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  #rightside #smallAndMediumNavBar {
+    right: 0;
+    width: calc(40% - (1007px - 100%) / 366);
+    padding: 30px;
+  }
+  #rightside #smallAndMediumNavBar .contents {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+#rightside #subMenus {
+  z-index: 100000;
+  display: none;
+  padding: 30px 10px 30px 10px;
+  background-color: #000;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-right: 1px solid #232323;
+  width: 100%;
+}
+#rightside #subMenus ul {
+  padding: 0;
+}
+#rightside #subMenus ul .menuTitle {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 14px 15px 14px 15px;
+  font-family: "Inter", sans-serif;
+  color: #FFFFFF;
+}
+#rightside #subMenus ul .menuTitle .icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+#rightside #subMenus ul .menuTitle .text {
+  margin-left: 10px;
+}
+#rightside #subMenus ul .menuTitle:hover {
+  background-color: #232323;
+  border-color: #232323;
+}
+#rightside #subMenus ul a {
+  font-family: "Inter", sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#rightside #subMenus ul a li {
+  font-family: "Inter", sans-serif;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 14px 15px 14px 15px;
+  Width: 223px;
+  Height: 48px;
+  list-style: none;
+}
+#rightside #subMenus ul a li:hover {
+  background-color: #232323;
+  border-color: #232323;
+}
+@media screen and (min-width: 375px) and (max-width: 640px) {
+  #rightside #subMenus {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  #rightside #subMenus {
+    width: calc(40% - (1007px - 100%) / 366);
+  }
+}
 #rightside #mainContentLogo {
   margin-top: 30px;
 }
@@ -3732,8 +3985,8 @@ body {
   width: 323px;
 }
 #rightside #mainContentLogo .logo img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   object-fit: contain;
 }
 #rightside #mainContentLogo .texts {
@@ -3743,7 +3996,7 @@ body {
 #rightside #mainContentLogo .texts p {
   color: white;
   font-family: "Inter", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 44px;
   letter-spacing: 0em;
@@ -3803,14 +4056,18 @@ body {
   width: 100%;
 }
 #rightside #cardsComponents .cardInfo .logoImage img {
-  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
   object-fit: contain;
   border-radius: 30px;
 }
 #rightside #cardsComponents .cardInfo .text-nav {
   padding-top: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 #rightside #cardsComponents .cardInfo .text-nav .text {
@@ -3888,6 +4145,17 @@ body {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
+}
+#rightside .backgroundImage {
+  top: 37%;
+  right: 0px;
+  position: absolute;
+  background-image: url("../image/bg-imgbg-rose.png");
+  width: 690px;
+  height: 750px;
+  transform: rotate(0deg);
+  background-repeat: no-repeat;
+  opacity: 0.9;
 }
 #rightside #getStarted {
   margin-top: 50px;
