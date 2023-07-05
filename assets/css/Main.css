@@ -1170,10 +1170,10 @@ body {
     height: 180px;
   }
   #rightSide #blogMainCard .blogCard .title {
-    padding-top: 38px;
+    padding-top: 45px;
   }
   #rightSide #blogMainCard .blogCard .title p {
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 #rightSide #cards {
