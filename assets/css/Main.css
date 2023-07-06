@@ -3692,6 +3692,13 @@ body {
   background-color: #0C0A0D;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  #leftSide {
+    width: 271px !important;
+    padding-right: 5px;
+    padding-left: 0px;
+  }
+}
 #subMenu {
   display: none;
   padding: 30px 10px 30px 10px;
@@ -3727,6 +3734,12 @@ body {
   border-color: #232323;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  #subMenu {
+    height: 1423px;
+    left: 271px;
+  }
+}
 @media screen and (min-width: 1920px) {
   #subMenu {
     height: 1888px;
@@ -4203,6 +4216,11 @@ body {
   opacity: 0.9;
   background-image: url("../image/bg-img_blue.png");
 }
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  #rightside #getStarted .bg-image {
+    display: none !important;
+  }
+}
 @media screen and (min-width: 1920px) {
   #rightside #getStarted .bg-image {
     left: 75px;
@@ -4323,6 +4341,11 @@ body {
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
+}
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  #rightside #getStarted .cardContent {
+    padding: 40px 20px;
+  }
 }
 
 .activeNavbar {

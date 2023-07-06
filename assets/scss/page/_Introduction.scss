@@ -218,6 +218,13 @@ body {
         }
     }
 }
+@media screen and ( min-width: 992px) and (max-width:1400px) {
+    #leftSide {
+    width: 271px !important;
+    padding-right: 5px;
+    padding-left: 0px;
+    }
+}
 
 #subMenu {
     display: none;
@@ -258,7 +265,13 @@ body {
         }
     }
 }
+@media screen and ( min-width: 992px) and (max-width:1400px) {
 
+#subMenu {
+    height: 1423px;
+    left: 271px;
+}
+}
 @media screen and (min-width: 1920px) {
     #subMenu {
         height: 1888px;
@@ -640,11 +653,7 @@ body {
             }
         }
     }
-    // @media screen and ( min-width: 1920px) {
-    //     #mainContentLogo {
-    //         width: 1230px;
-    //     }     
-    // }
+  
 
     #cardsComponents {
         margin-top: 70px;
@@ -739,11 +748,7 @@ body {
             }
         }
     }
-    // @media screen and ( min-width: 1920px) {
-    //     #cardsComponents {
-    //         width: 1230px;
-    //     }     
-    // }
+
 
     #textInfromationContent {
         margin-top: 50px;
@@ -768,6 +773,7 @@ body {
                 }
             }
         }
+     
         .aboutCards {
             margin-top: 50px;
             .cards {
@@ -802,11 +808,7 @@ body {
             
         }
     }
-    // @media screen and ( min-width: 1920px) {
-    //     #textInfromationContent {
-    //         width: 1230px;
-    //     }     
-    // }
+
 
     .backgroundImage{
         top: 37%;
@@ -835,6 +837,11 @@ body {
             transform: rotate(0deg);
             opacity: 0.9;
             background-image: url("../image/bg-img_blue.png");
+        }
+        @media screen and ( min-width: 992px) and (max-width:1400px) {
+            .bg-image {
+                display: none !important;
+            }
         }
 
         @media screen and (min-width: 1920px) {
@@ -975,13 +982,14 @@ body {
                 }
             }
         }
+        @media screen and ( min-width: 992px) and (max-width:1400px) {
+            .cardContent {
+            padding: 40px 20px;
+            }
+        }
+       
     }
-    // @media screen and ( min-width: 1920px) {
-    //     #getStarted {
-    //         width: 1230px;
-    //     }     
-    // }
-
+   
 }
 
 
