@@ -4331,4 +4331,11 @@ body {
 .activeHoverLiSubMenus {
   background-color: #232323;
   border-color: #232323;
+}
+
+@media (min-width: 1921px) and (max-width: 2600px) {
+  .col-lg-6,
+  .col-md-6 {
+    width: 40% !important;
+  }
 }/*# sourceMappingURL=Main.css.map */

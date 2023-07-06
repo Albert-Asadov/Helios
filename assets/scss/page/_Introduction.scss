@@ -640,6 +640,11 @@ body {
             }
         }
     }
+    // @media screen and ( min-width: 1920px) {
+    //     #mainContentLogo {
+    //         width: 1230px;
+    //     }     
+    // }
 
     #cardsComponents {
         margin-top: 70px;
@@ -733,6 +738,11 @@ body {
             }
         }
     }
+    // @media screen and ( min-width: 1920px) {
+    //     #cardsComponents {
+    //         width: 1230px;
+    //     }     
+    // }
 
     #textInfromationContent {
         margin-top: 50px;
@@ -780,8 +790,15 @@ body {
                     }
                 }
             }
+            
+            
         }
     }
+    // @media screen and ( min-width: 1920px) {
+    //     #textInfromationContent {
+    //         width: 1230px;
+    //     }     
+    // }
 
     .backgroundImage{
         top: 37%;
@@ -951,8 +968,15 @@ body {
             }
         }
     }
+    // @media screen and ( min-width: 1920px) {
+    //     #getStarted {
+    //         width: 1230px;
+    //     }     
+    // }
 
 }
+
+
 
 .activeNavbar {
     background-color: #000 !important;
@@ -967,4 +991,12 @@ body {
 .activeHoverLiSubMenus {
     background-color: #232323;
     border-color: #232323;
+}
+
+
+@media (min-width: 1921px) and (max-width: 2600px) {
+    .col-lg-6,
+    .col-md-6 {
+        width: 40% !important;
+    }
 }
