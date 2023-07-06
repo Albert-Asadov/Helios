@@ -13,7 +13,7 @@ body {
     grid-template-columns: 1fr 5fr;
 }
 
-@media screen and (min-width: 370px) and (max-width:900px) {
+@media screen and (min-width: 370px) and (max-width:991px) {
     .Home {
         display: grid !important;
         grid-template-columns: 2fr !important;
@@ -572,7 +572,7 @@ position: relative;
             }
         }
     }
-    @media screen and (min-width: 370px) and (max-width:900px) {
+    @media screen and (min-width: 370px) and (max-width:991px) {
         #blogMainCard {
             .blogCard {
                 border-radius: 0px;
@@ -689,7 +689,7 @@ position: relative;
                             width: auto;
                         }
                     }
-                    @media screen and (min-width: 370px) and (max-width:900px) {
+                    @media screen and (min-width: 370px) and (max-width:991px) {
                         .textContent {
                             width: auto;
                         }
@@ -734,7 +734,7 @@ position: relative;
             }
         }
     }
-    @media screen and (min-width: 370px) and (max-width:900px) {
+    @media screen and (min-width: 370px) and (max-width:991px) {
 
         #cards {
             position: relative;
@@ -823,7 +823,7 @@ position: relative;
                     font-size: 20px;
                 }
             }
-            @media screen and (min-width: 370px) and (max-width:900px) {
+            @media screen and (min-width: 370px) and (max-width:991px) {
                 .text {
                     width: auto !important;
                     margin-top: 30px;
