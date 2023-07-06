@@ -583,6 +583,14 @@ body {
                 text-align: center;
             }
         }
+        @media screen and ( min-width: 370px) and (max-width:900px) {
+            .texts {
+                p{
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+            }
+        }
 
         .navigationButtonsMain {
             margin-top: 30px;
@@ -705,6 +713,11 @@ body {
 
                     }
                 }
+            }
+        }
+        @media screen and ( min-width: 370px) and (max-width:900px) {
+            .cardInfo {
+                padding: 0px;
             }
         }
     }

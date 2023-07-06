@@ -4002,6 +4002,12 @@ body {
   letter-spacing: 0em;
   text-align: center;
 }
+@media screen and (min-width: 370px) and (max-width: 900px) {
+  #rightside #mainContentLogo .texts p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
 #rightside #mainContentLogo .navigationButtonsMain {
   margin-top: 30px;
   display: flex;
@@ -4105,6 +4111,11 @@ body {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
+}
+@media screen and (min-width: 370px) and (max-width: 900px) {
+  #rightside #cardsComponents .cardInfo {
+    padding: 0px;
+  }
 }
 #rightside #textInfromationContent {
   margin-top: 50px;
