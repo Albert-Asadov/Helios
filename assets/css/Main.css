@@ -3522,7 +3522,7 @@ body {
   grid-template-columns: 1fr 5fr;
 }
 
-@media screen and (min-width: 370px) and (max-width: 900px) {
+@media screen and (min-width: 370px) and (max-width: 991px) {
   .Home {
     display: grid !important;
     grid-template-columns: 2fr !important;
@@ -3534,7 +3534,7 @@ body {
     grid-template-columns: 1fr 7fr !important;
   }
 }
-@media screen and (min-width: 370px) and (max-width: 900px) {
+@media screen and (min-width: 370px) and (max-width: 991px) {
   .Home {
     display: grid !important;
     grid-template-columns: 2fr !important;
@@ -4020,7 +4020,7 @@ body {
   letter-spacing: 0em;
   text-align: center;
 }
-@media screen and (min-width: 370px) and (max-width: 900px) {
+@media screen and (min-width: 370px) and (max-width: 991px) {
   #rightside #mainContentLogo .texts p {
     font-size: 18px;
     line-height: 27px;
@@ -4131,7 +4131,7 @@ body {
   letter-spacing: 0em;
   text-align: left;
 }
-@media screen and (min-width: 370px) and (max-width: 900px) {
+@media screen and (min-width: 370px) and (max-width: 991px) {
   #rightside #cardsComponents .cardInfo .logoImage .text-nav {
     padding-top: 20px;
     padding-bottom: 10px;
@@ -4279,7 +4279,7 @@ body {
   color: var(--solid-dark-gray-d-75, #A1A6B4);
   font-size: 20px;
 }
-@media screen and (min-width: 370px) and (max-width: 900px) {
+@media screen and (min-width: 370px) and (max-width: 991px) {
   #rightside #getStarted .cardContent .text {
     width: auto;
     margin-top: 30px;

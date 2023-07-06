@@ -12,7 +12,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
-@media screen and (min-width: 370px) and (max-width:900px) {
+@media screen and (min-width: 370px) and (max-width:991px) {
     .Home {
         display: grid !important;
         grid-template-columns: 2fr !important;
@@ -25,7 +25,7 @@ body {
         grid-template-columns: 1fr 7fr !important;
     }
 }
-@media screen and (min-width: 370px) and (max-width:900px) {
+@media screen and (min-width: 370px) and (max-width:991px) {
     .Home {
         display: grid !important;
         grid-template-columns: 2fr !important;
@@ -599,7 +599,7 @@ body {
                 text-align: center;
             }
         }
-        @media screen and ( min-width: 370px) and (max-width:900px) {
+        @media screen and ( min-width: 370px) and (max-width:991px) {
             .texts {
                 p{
                     font-size: 18px;
@@ -730,7 +730,7 @@ body {
                         }
                     }
                 }
-                @media screen and ( min-width: 370px) and (max-width:900px) {
+                @media screen and ( min-width: 370px) and (max-width:991px) {
                     .text-nav {
                         padding-top: 20px;
                         padding-bottom: 10px;
@@ -906,7 +906,7 @@ body {
                 }
             }
 
-            @media screen and ( min-width: 370px) and (max-width:900px) {
+            @media screen and ( min-width: 370px) and (max-width:991px) {
                 .text {
                     width: auto;
                     margin-top: 30px;
