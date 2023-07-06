@@ -75,6 +75,9 @@ body {
                 }
             }
         }
+        @media screen and ( min-width: 992px) and (max-width:1400px) {
+            padding-left: 10px;
+        }
 
         nav {
             margin-top: 37.78px;
@@ -739,6 +742,19 @@ body {
                         }
                     }
                 }
+                @media screen and ( min-width: 992px) and (max-width:1400px) {
+                    .text-nav {
+                        padding-top: 20px;
+                        padding-bottom: 10px;
+                        .text {
+                            padding-left: 0px !important;
+                            width: auto !important;
+                            p {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
             }
 
         }
@@ -1016,3 +1032,4 @@ body {
         width: 40% !important;
     }
 }
+

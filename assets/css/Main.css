@@ -3576,6 +3576,11 @@ body {
   border-radius: 8.171px;
   background: #1E1E1E;
 }
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  #leftSide .content {
+    padding-left: 10px;
+  }
+}
 #leftSide .content nav {
   margin-top: 37.78px;
 }
@@ -4136,6 +4141,19 @@ body {
   }
   #rightside #cardsComponents .cardInfo .logoImage .text-nav .text p {
     font-size: 26px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  #rightside #cardsComponents .cardInfo .logoImage .text-nav {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  #rightside #cardsComponents .cardInfo .logoImage .text-nav .text {
+    padding-left: 0px !important;
+    width: auto !important;
+  }
+  #rightside #cardsComponents .cardInfo .logoImage .text-nav .text p {
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 370px) and (max-width: 900px) {
