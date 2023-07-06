@@ -4121,7 +4121,7 @@ body {
     width: auto !important;
   }
   #rightside #cardsComponents .cardInfo .text-nav .text p {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 @media screen and (min-width: 370px) and (max-width: 900px) {
