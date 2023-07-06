@@ -1193,6 +1193,11 @@ body {
   background-repeat: no-repeat;
   opacity: 0.9;
 }
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  #rightSide #cards .imageBg {
+    display: none !important;
+  }
+}
 #rightSide #cards .title {
   width: 304px;
   height: 35px;
@@ -1252,6 +1257,11 @@ body {
 }
 #rightSide #cards .cards-content .card .typography-content .textContent P {
   margin: 0;
+}
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  #rightSide #cards .cards-content .card .typography-content .textContent {
+    width: auto;
+  }
 }
 @media screen and (min-width: 370px) and (max-width: 900px) {
   #rightSide #cards .cards-content .card .typography-content .textContent {
@@ -1320,6 +1330,11 @@ body {
   transform: rotate(0deg);
   opacity: 0.9;
   background-image: url("../image/bg-img_blue.png");
+}
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  #rightSide #getStarted .bg-image {
+    display: none !important;
+  }
 }
 @media screen and (min-width: 1920px) {
   #rightSide #getStarted .bg-image {
@@ -2421,6 +2436,11 @@ body {
   border-color: #232323;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  #subMenu {
+    left: 280px !important;
+  }
+}
 @media screen and (min-width: 1920px) {
   #subMenu {
     height: 1888px;
@@ -2752,9 +2772,7 @@ body {
 }
 @media screen and (min-width: 992px) and (max-width: 1400px) {
   .rightSide #main-content .cardContent {
-    margin-left: 10px;
     margin-top: 48px;
-    margin-right: 10px;
     padding: 20px;
   }
 }
@@ -2894,8 +2912,6 @@ body {
   .rightSide #desighn {
     position: relative;
     margin-top: 50px;
-    margin-left: 18px;
-    margin-right: 10px;
   }
 }
 @media screen and (min-width: 370px) and (max-width: 991px) {
@@ -3080,7 +3096,7 @@ body {
 }
 @media screen and (min-width: 992px) and (max-width: 1400px) {
   .rightSide #getStarted .cardContent {
-    padding: 10px;
+    padding: 20px;
   }
 }
 

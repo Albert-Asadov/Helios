@@ -609,6 +609,11 @@ position: relative;
             background-repeat: no-repeat;
             opacity: 0.9;
         }
+        @media screen and ( min-width: 992px) and (max-width:1400px) {
+            .imageBg {
+                display: none !important;
+            }
+        }
 
         .title {
             width: 304px;
@@ -677,6 +682,11 @@ position: relative;
 
                         P {
                             margin: 0;
+                        }
+                    }
+                    @media screen and ( min-width: 992px) and (max-width:1400px) {
+                        .textContent {
+                            width: auto;
                         }
                     }
                     @media screen and (min-width: 370px) and (max-width:900px) {
@@ -761,6 +771,11 @@ position: relative;
             transform: rotate(0deg);
             opacity: 0.9;
             background-image: url("../image/bg-img_blue.png");
+        }
+        @media screen and ( min-width: 992px) and (max-width:1400px) {
+            .bg-image {
+                display: none !important;
+            }
         }
 
         @media screen and (min-width: 1920px) {

@@ -251,6 +251,11 @@ body {
         }
     }
 }
+@media screen and ( min-width: 992px) and (max-width:1400px){
+     #subMenu {
+        left: 280px !important;
+     }
+}
 @media screen and (min-width: 1920px) {
     #subMenu {
         height: 1888px;
@@ -537,7 +542,7 @@ position: relative;
             }
         }
     }
-
+   
     @media screen and (min-width:375px) and (max-width:640px) {
         #subMenus {
 
@@ -645,9 +650,9 @@ position: relative;
     @media screen and ( min-width: 992px) and (max-width:1400px) {
         #main-content {
             .cardContent {
-                margin-left: 10px;
+                // margin-left: 10px;
                 margin-top: 48px;
-                margin-right: 10px;
+                // margin-right: 10px;
                 padding:20px;
             }
         }
@@ -803,8 +808,8 @@ position: relative;
         #desighn {
             position: relative;
             margin-top: 50px;
-            margin-left: 18px;
-            margin-right: 10px;
+            // margin-left: 18px;
+            // margin-right: 10px;
         }
     }
     @media screen and ( min-width: 370px) and (max-width:991px) {
@@ -1012,7 +1017,7 @@ position: relative;
         }
         @media screen and ( min-width: 992px) and (max-width:1400px) {
             .cardContent {
-                padding: 10px;
+                padding: 20px;
             }
         }
     }
