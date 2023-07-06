@@ -76,7 +76,9 @@ body {
             }
         }
         @media screen and ( min-width: 992px) and (max-width:1400px) {
-            padding-left: 10px;
+            .logo {
+                padding-left: 10px;
+            }
         }
 
         nav {
@@ -836,6 +838,11 @@ body {
         transform: rotate(0deg);
         background-repeat: no-repeat;
         opacity: 0.9;
+    }
+    @media screen and ( min-width: 992px) and (max-width:1400px) {
+        .backgroundImage{
+            display: none !important;
+        }
     }
 
     #getStarted {

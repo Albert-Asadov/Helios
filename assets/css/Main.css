@@ -2216,7 +2216,7 @@ body {
   grid-template-columns: 1fr 5fr;
 }
 
-@media screen and (min-width: 370px) and (max-width: 900px) {
+@media screen and (min-width: 370px) and (max-width: 991px) {
   .Home {
     display: grid !important;
     grid-template-columns: 2fr !important;
@@ -2228,7 +2228,7 @@ body {
     grid-template-columns: 1fr 7fr !important;
   }
 }
-#leftSide {
+#leftSides {
   width: 351px;
   padding-top: 53px;
   padding-right: 40px;
@@ -2236,36 +2236,41 @@ body {
   display: flex;
   justify-content: center;
 }
-#leftSide .content {
+#leftSides .content {
   width: 270px;
   height: 398px;
 }
-#leftSide .content .logo {
+#leftSides .content .logo {
   display: flex;
   justify-content: start;
   align-items: center;
 }
-#leftSide .content .logo .mainLogo img {
+#leftSides .content .logo .mainLogo img {
   width: 147.27px;
   height: 14.114px;
   flex-shrink: 0;
   object-fit: contain;
 }
-#leftSide .content .logo .secondaryLogo img {
+#leftSides .content .logo .secondaryLogo img {
   width: 39.806px;
   height: 40.225px;
   flex-shrink: 0;
   border-radius: 8.171px;
   background: #1E1E1E;
 }
-#leftSide .content nav {
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  #leftSides .content .logo {
+    padding-left: 10px;
+  }
+}
+#leftSides .content nav {
   margin-top: 37.78px;
 }
-#leftSide .content nav ul {
+#leftSides .content nav ul {
   padding: 0;
   margin: 0;
 }
-#leftSide .content nav ul .hoverGray {
+#leftSides .content nav ul .hoverGray {
   margin-bottom: 20px;
   border-radius: 10px;
   padding: 14px 15px;
@@ -2279,20 +2284,20 @@ body {
   font-weight: 500;
   text-decoration: none;
 }
-#leftSide .content nav ul .hoverGray:hover {
+#leftSides .content nav ul .hoverGray:hover {
   background-color: #1E1E1E;
 }
-#leftSide .content nav ul .hoverGray li {
+#leftSides .content nav ul .hoverGray li {
   list-style: none;
 }
-#leftSide .content nav ul .component {
+#leftSides .content nav ul .component {
   list-style: none;
 }
-#leftSide .content nav ul .component .accordion .accordion-item {
+#leftSides .content nav ul .component .accordion .accordion-item {
   border-color: #000;
   background-color: #000;
 }
-#leftSide .content nav ul .component .accordion .accordion-item .accordion-header {
+#leftSides .content nav ul .component .accordion .accordion-item .accordion-header {
   border-radius: 12px;
   padding-bottom: 0px;
   background-color: #000;
@@ -2309,24 +2314,24 @@ body {
   font-weight: 500;
   padding: 14px 15px 14px 15px;
 }
-#leftSide .content nav ul .component .accordion .accordion-item .accordion-header:hover {
+#leftSides .content nav ul .component .accordion .accordion-item .accordion-header:hover {
   background-color: #1E1E1E !important;
   border-color: #1E1E1E !important;
 }
-#leftSide .content nav ul .component .accordion .accordion-item .accordion-header img {
+#leftSides .content nav ul .component .accordion .accordion-item .accordion-header img {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
   object-fit: contain;
   transition: transform 0.2s ease-in-out;
 }
-#leftSide .content nav ul .component .accordion .accordion-item .accordion-header.active {
+#leftSides .content nav ul .component .accordion .accordion-item .accordion-header.active {
   background-color: #232323;
   border-color: #232323;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-#leftSide .content nav ul .component .accordion .accordion-item .accordion-content {
+#leftSides .content nav ul .component .accordion .accordion-item .accordion-content {
   padding: 14px 15px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -2336,10 +2341,10 @@ body {
   max-height: 0;
   overflow: hidden;
 }
-#leftSide .content nav ul .component .accordion .accordion-item .accordion-content ul a {
+#leftSides .content nav ul .component .accordion .accordion-item .accordion-content ul a {
   text-decoration: none;
 }
-#leftSide .content nav ul .component .accordion .accordion-item .accordion-content ul li {
+#leftSides .content nav ul .component .accordion .accordion-item .accordion-content ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2355,7 +2360,7 @@ body {
   padding: 14px 15px 14px 15px;
   border-radius: 10px;
 }
-#leftSide .content nav ul .component .accordion .accordion-item .accordion-content ul li .buttonNavPlanned a {
+#leftSides .content nav ul .component .accordion .accordion-item .accordion-content ul li .buttonNavPlanned a {
   border-radius: 22px;
   color: #EAF0FE;
   border: 1px solid #302C2C;
@@ -2370,10 +2375,17 @@ body {
   font-weight: 700;
   font-family: "Inter", sans-serif;
 }
-#leftSide .content nav ul .component .accordion .accordion-item .accordion-content ul li:hover {
+#leftSides .content nav ul .component .accordion .accordion-item .accordion-content ul li:hover {
   background-color: #0C0A0D;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  #leftSides {
+    width: 280px !important;
+    padding-right: 5px;
+    padding-left: 0px;
+  }
+}
 #subMenu {
   display: none;
   padding: 30px 10px 30px 10px;
@@ -2417,7 +2429,7 @@ body {
 .rightSide {
   position: relative;
 }
-@media screen and (min-width: 370px) and (max-width: 900px) {
+@media screen and (min-width: 370px) and (max-width: 991px) {
   .rightSide .rightSide {
     overflow: hidden;
   }
@@ -2738,7 +2750,15 @@ body {
   font-weight: 700;
   border-color: #2E6DF3;
 }
-@media screen and (min-width: 370px) and (max-width: 900px) {
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  .rightSide #main-content .cardContent {
+    margin-left: 10px;
+    margin-top: 48px;
+    margin-right: 10px;
+    padding: 10px 10px 10px 10px;
+  }
+}
+@media screen and (min-width: 370px) and (max-width: 991px) {
   .rightSide #main-content .cardContent {
     margin-left: 10px;
     margin-right: 10px;
@@ -2852,13 +2872,33 @@ body {
 .rightSide #desighn .cards-content .card .typography-content .textContent P {
   margin: 0;
 }
-@media screen and (min-width: 370px) and (max-width: 900px) {
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  .rightSide #cards .cards-content .card .typography-content .textContent,
+  .rightSide #desighn .cards-content .card .typography-content .textContent {
+    width: auto;
+    font-size: 15px;
+  }
+  .rightSide #cards .cards-content .card .typography-content .titleContent,
+  .rightSide #desighn .cards-content .card .typography-content .titleContent {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 370px) and (max-width: 991px) {
   .rightSide #cards .cards-content .card .typography-content .textContent,
   .rightSide #desighn .cards-content .card .typography-content .textContent {
     width: auto;
   }
 }
-@media screen and (min-width: 370px) and (max-width: 900px) {
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  .rightSide #cards,
+  .rightSide #desighn {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 18px;
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 370px) and (max-width: 991px) {
   .rightSide #cards,
   .rightSide #desighn {
     position: relative;
@@ -2891,6 +2931,11 @@ body {
   background-repeat: no-repeat;
   opacity: 0.9;
 }
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  .rightSide #desighn .imageBg {
+    display: none !important;
+  }
+}
 .rightSide #getStarted {
   margin-top: 50px;
   position: relative;
@@ -2906,6 +2951,11 @@ body {
   transform: rotate(0deg);
   opacity: 0.9;
   background-image: url("../image/bg-img_blue.png");
+}
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  .rightSide #getStarted .bg-image {
+    display: none !important;
+  }
 }
 @media screen and (min-width: 1920px) {
   .rightSide #getStarted .bg-image {
@@ -2947,7 +2997,7 @@ body {
   color: var(--solid-dark-gray-d-75, #A1A6B4);
   font-size: 20px;
 }
-@media screen and (min-width: 370px) and (max-width: 900px) {
+@media screen and (min-width: 370px) and (max-width: 991px) {
   .rightSide #getStarted .cardContent .text {
     width: auto;
     margin-top: 30px;
@@ -3028,6 +3078,11 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 600;
 }
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  .rightSide #getStarted .cardContent {
+    padding: 10px;
+  }
+}
 
 .activeNavbar {
   background-color: #000 !important;
@@ -3044,6 +3099,11 @@ body {
   border-color: #232323;
 }
 
+@media (min-width: 1921px) and (max-width: 2600px) {
+  .cards-content .col-md-6 {
+    width: 33% !important;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -3577,7 +3637,7 @@ body {
   background: #1E1E1E;
 }
 @media screen and (min-width: 992px) and (max-width: 1400px) {
-  #leftSide .content {
+  #leftSide .content .logo {
     padding-left: 10px;
   }
 }
@@ -4217,6 +4277,11 @@ body {
   transform: rotate(0deg);
   background-repeat: no-repeat;
   opacity: 0.9;
+}
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  #rightside .backgroundImage {
+    display: none !important;
+  }
 }
 #rightside #getStarted {
   margin-top: 50px;
