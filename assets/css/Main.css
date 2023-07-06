@@ -4059,6 +4059,7 @@ body {
   padding: 10px 10px 20px 10px;
 }
 #rightside #cardsComponents .cardInfo .logoImage {
+  margin: 0 auto;
   width: 100%;
 }
 #rightside #cardsComponents .cardInfo .logoImage img {
@@ -4066,17 +4067,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   object-fit: contain;
   border-radius: 30px;
 }
-#rightside #cardsComponents .cardInfo .text-nav {
+#rightside #cardsComponents .cardInfo .logoImage .text-nav {
   padding-top: 20px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
-#rightside #cardsComponents .cardInfo .text-nav .text {
+#rightside #cardsComponents .cardInfo .logoImage .text-nav .text {
   display: flex;
   align-items: center;
   margin: 0;
@@ -4084,17 +4085,17 @@ body {
   height: 35px;
   padding: 0px 10px 0px 10px;
 }
-#rightside #cardsComponents .cardInfo .text-nav .text p {
+#rightside #cardsComponents .cardInfo .logoImage .text-nav .text p {
   margin: 0;
   color: #FFFFFF;
   font-family: "Inter", sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
   line-height: 35px;
   letter-spacing: 0em;
   text-align: center;
 }
-#rightside #cardsComponents .cardInfo .text-nav .nav a {
+#rightside #cardsComponents .cardInfo .logoImage .text-nav .nav a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4113,14 +4114,14 @@ body {
   text-align: left;
 }
 @media screen and (min-width: 370px) and (max-width: 900px) {
-  #rightside #cardsComponents .cardInfo .text-nav {
+  #rightside #cardsComponents .cardInfo .logoImage .text-nav {
     padding-top: 20px;
     padding-bottom: 10px;
   }
-  #rightside #cardsComponents .cardInfo .text-nav .text {
+  #rightside #cardsComponents .cardInfo .logoImage .text-nav .text {
     width: auto !important;
   }
-  #rightside #cardsComponents .cardInfo .text-nav .text p {
+  #rightside #cardsComponents .cardInfo .logoImage .text-nav .text p {
     font-size: 26px;
   }
 }
@@ -4142,6 +4143,12 @@ body {
   line-height: 31px;
   letter-spacing: 0em;
   text-align: left;
+}
+@media screen and (min-width: 1920px) {
+  #rightside #textInfromationContent .about p {
+    margin: 0 auto;
+    width: 78%;
+  }
 }
 #rightside #textInfromationContent .aboutCards {
   margin-top: 50px;
