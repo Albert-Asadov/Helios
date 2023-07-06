@@ -714,6 +714,18 @@ body {
                     }
                 }
             }
+            @media screen and ( min-width: 370px) and (max-width:900px) {
+                .text-nav {
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                    .text {
+                        width: auto !important;
+                        p {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
         }
         @media screen and ( min-width: 370px) and (max-width:900px) {
             .cardInfo {
