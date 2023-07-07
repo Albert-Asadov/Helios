@@ -3432,13 +3432,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-#rightSide .subMenu_content #content #smallAndMediumMenu .content .imageses {
+#rightSide .subMenu_content #content #smallAndMediumMenu .content .imagesesH {
   height: 25.5497379303px;
   display: flex;
   justify-content: start;
   align-items: center;
 }
-#rightSide .subMenu_content #content #smallAndMediumMenu .content .imageses img {
+#rightSide .subMenu_content #content #smallAndMediumMenu .content .imagesesH img {
   object-fit: contain;
 }
 #rightSide .subMenu_content #content #smallAndMediumMenu .content .HamburgerMenu img {
