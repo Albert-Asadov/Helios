@@ -1,7 +1,7 @@
 
 const accordionItems = document.querySelectorAll('.accordion-item');
 const activeHover = document.querySelectorAll(".hoverActive");
-const SubMenu = document.getElementById("subMenu");
+const SubMenu = document.getElementById("subMenuHM");
 const SubMenus = document.getElementById("subMenus");
 
 function toggleAccordion() {

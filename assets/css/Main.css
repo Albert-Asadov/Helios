@@ -171,28 +171,29 @@ body {
   background-color: #0C0A0D;
 }
 
-#subMenu {
+#subMenuBI {
   display: none;
   padding: 30px 10px 30px 10px;
   z-index: 6;
   background-color: #000;
-  height: 1782px;
-  position: absolute;
+  height: 100vh;
+  position: fixed;
+  overflow-y: scroll;
   z-index: 9999;
   left: 353px;
   top: 0;
   border-right: 1px solid #232323;
   width: 243px;
 }
-#subMenu ul {
+#subMenuBI ul {
   padding: 0;
 }
-#subMenu ul a {
+#subMenuBI ul a {
   font-family: "Inter", sans-serif;
   color: #FFFFFF;
   text-decoration: none;
 }
-#subMenu ul a li {
+#subMenuBI ul a li {
   font-family: "Inter", sans-serif;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -201,7 +202,7 @@ body {
   Height: 48px;
   list-style: none;
 }
-#subMenu ul a li:hover {
+#subMenuBI ul a li:hover {
   background-color: #232323;
   border-color: #232323;
 }
@@ -854,28 +855,29 @@ body {
   background-color: #0C0A0D;
 }
 
-#subMenu {
+#subMenuss {
   display: none;
   padding: 30px 10px 30px 10px;
   z-index: 6;
   background-color: #000;
-  height: 1586px;
-  position: absolute;
+  overflow-y: scroll;
+  height: 100vh;
+  position: fixed;
   z-index: 9999;
   left: 353px;
   top: 0;
   border-right: 1px solid #232323;
   width: 243px;
 }
-#subMenu ul {
+#subMenuss ul {
   padding: 0;
 }
-#subMenu ul a {
+#subMenuss ul a {
   font-family: "Inter", sans-serif;
   color: #FFFFFF;
   text-decoration: none;
 }
-#subMenu ul a li {
+#subMenuss ul a li {
   font-family: "Inter", sans-serif;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -884,7 +886,7 @@ body {
   Height: 48px;
   list-style: none;
 }
-#subMenu ul a li:hover {
+#subMenuss ul a li:hover {
   background-color: #232323;
   border-color: #232323;
 }
@@ -1645,7 +1647,7 @@ body {
   padding: 30px 10px 30px 10px;
   z-index: 6;
   background-color: #000;
-  height: 2009px;
+  height: 1823px;
   border-right: 1px solid #232323;
   width: 243px;
 }
@@ -2450,28 +2452,29 @@ body {
     padding-left: 0px;
   }
 }
-#subMenu {
+#subMenuHM {
   display: none;
   padding: 30px 10px 30px 10px;
   z-index: 6;
   background-color: #000;
-  height: 1654px;
-  position: absolute;
+  overflow-y: scroll;
+  height: 100vh;
+  position: fixed;
   z-index: 9999;
   left: 353px;
   top: 0;
   border-right: 1px solid #232323;
   width: 243px !important;
 }
-#subMenu ul {
+#subMenuHM ul {
   padding: 0;
 }
-#subMenu ul a {
+#subMenuHM ul a {
   font-family: "Inter", sans-serif;
   color: #FFFFFF;
   text-decoration: none;
 }
-#subMenu ul a li {
+#subMenuHM ul a li {
   font-family: "Inter", sans-serif;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -2480,7 +2483,7 @@ body {
   Height: 48px;
   list-style: none;
 }
-#subMenu ul a li:hover {
+#subMenuHM ul a li:hover {
   background-color: #232323;
   border-color: #232323;
 }
@@ -4202,8 +4205,9 @@ body {
   padding: 30px 10px 30px 10px;
   z-index: 6;
   background-color: #000;
-  height: 1654px;
-  position: absolute;
+  overflow-y: scroll;
+  height: 100vh;
+  position: fixed;
   z-index: 9999;
   left: 353px;
   top: 0;

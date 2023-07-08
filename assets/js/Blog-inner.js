@@ -69,7 +69,7 @@
 
 const accordionItems = document.querySelectorAll('.accordion-item');
 const activeHover = document.querySelectorAll(".hoverActive");
-const SubMenu = document.getElementById("subMenu");
+const SubMenu = document.getElementById("subMenuBI");
 const SubMenus = document.getElementById("subMenus");
 
 function toggleAccordion() {
@@ -194,3 +194,17 @@ document.addEventListener("click", function(e) {
     SubMenus.style.display = "none";
   }
 });
+
+// window.addEventListener('DOMContentLoaded', function() {
+//   var subMenu = document.getElementById('subMenu');
+//   var container = document.getElementById('text-content');
+
+//   function updateSubMenuHeight() {
+//     var containerHeight = container.offsetHeight;
+//     subMenu.classList.toggle('expanded', containerHeight > 1763);
+//   }
+
+//   window.addEventListener('resize', updateSubMenuHeight);
+//   updateSubMenuHeight();
+// });
+

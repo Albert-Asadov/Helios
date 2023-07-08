@@ -185,13 +185,14 @@ body {
         }
     }
 }
-#subMenu{
+#subMenuBI{
     display: none;
     padding: 30px 10px 30px 10px;
     z-index: 6;
     background-color: #000;
-    height: 1782px;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
+    overflow-y: scroll;
     z-index: 9999; 
     left: 353px;
     top: 0;
