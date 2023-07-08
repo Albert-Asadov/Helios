@@ -855,8 +855,7 @@ position: relative;
     #getStarted {
         margin-top: 50px;
         position: relative;
-
-        .bg-image {
+        .background_Images_Blue {
             left: 75px;
             bottom: 30px;
             position: absolute;
@@ -866,7 +865,7 @@ position: relative;
             background-size: cover;
             transform: rotate(0deg);
             opacity: 0.9;
-            background-image: url("../image/bg-img_blue.png");
+            background-image: url("../image/bg-img-bottom2.svg");
         }
         @media screen and ( min-width: 992px) and (max-width:1400px) {
             .bg-image {
