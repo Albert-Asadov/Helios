@@ -10,7 +10,7 @@ body {
 
 .flexColumns {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
 }
 
 @media screen and (min-width: 370px) and (max-width:991px) {
