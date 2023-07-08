@@ -646,13 +646,14 @@ body {
                 margin-top: 48px;
                 margin-left: 88px;
 
-                .bg-image {
+                .imageContents {
                     width: auto;
-                    height: 500px;
-                    background-image: url("../image/image 1.png");
-                    background-size: contain;
-                    background-position: left;
-                    background-repeat: no-repeat;
+                    height: auto;
+                    object-fit: contain;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
             @media screen and ( min-width: 992px) and (max-width:1400px) {
@@ -948,8 +949,7 @@ body {
 
   }
   
-  /* Цвет заполнения полосы прокрутки */
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     border-radius: 20px;
     background-color: #464545;
 

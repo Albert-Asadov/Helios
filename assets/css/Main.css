@@ -2301,7 +2301,6 @@ body {
   background-color: #1F1F20;
 }
 
-/* Цвет заполнения полосы прокрутки */
 ::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background-color: #464545;
@@ -3800,13 +3799,14 @@ body {
   margin-top: 48px;
   margin-left: 88px;
 }
-#rightSide .subMenu_content #content #image .bg-image {
+#rightSide .subMenu_content #content #image .imageContents {
   width: auto;
-  height: 500px;
-  background-image: url("../image/image 1.png");
-  background-size: contain;
-  background-position: left;
-  background-repeat: no-repeat;
+  height: auto;
+  object-fit: contain;
+}
+#rightSide .subMenu_content #content #image .imageContents img {
+  width: 100%;
+  height: 100%;
 }
 @media screen and (min-width: 992px) and (max-width: 1400px) {
   #rightSide .subMenu_content #content #image {
@@ -4066,7 +4066,6 @@ body {
   background-color: #1F1F20;
 }
 
-/* Цвет заполнения полосы прокрутки */
 ::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background-color: #464545;
