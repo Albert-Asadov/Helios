@@ -684,6 +684,21 @@ body {
   border-color: #000 !important;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1F1F20;
+}
+
+/* Цвет заполнения полосы прокрутки */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #464545;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -1462,6 +1477,21 @@ body {
 .activeNavbar {
   background-color: #000 !important;
   border-color: #000 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1F1F20;
+}
+
+/* Цвет заполнения полосы прокрутки */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #464545;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 * {
@@ -2264,6 +2294,21 @@ body {
 .activeNavbar {
   background-color: #000 !important;
   border-color: #000 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1F1F20;
+}
+
+/* Цвет заполнения полосы прокрутки */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #464545;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 * {
@@ -4016,6 +4061,21 @@ body {
   border-color: #000 !important;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1F1F20;
+}
+
+/* Цвет заполнения полосы прокрутки */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #464545;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -4902,4 +4962,18 @@ body {
   .col-md-6 {
     width: 40% !important;
   }
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1F1F20;
+}
+
+/* Цвет заполнения полосы прокрутки */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #464545;
+}
+
+.no-scroll {
+  overflow: hidden;
 }/*# sourceMappingURL=Main.css.map */

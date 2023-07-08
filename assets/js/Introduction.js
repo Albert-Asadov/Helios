@@ -56,6 +56,7 @@ activeHover.forEach(e => {
   e.addEventListener("click", function(e) {
     e.stopPropagation();
     SubMenu.style.display = "block";
+    document.body.classList.add('no-scroll');
   });
 });
 
@@ -65,9 +66,11 @@ window.addEventListener("click", function(e) {
     activeHover.forEach(element => {
       element.classList.remove("activeNavbar");
     });
+    document.body.classList.remove('no-scroll');
   }
   if (!SubMenus.contains(e.target)) {
     SubMenu.style.display = "none";
+    document.body.classList.remove('no-scroll');
   }
 });
 
@@ -77,6 +80,7 @@ var navbarHamburger = document.getElementById("smallAndMediumNavBar");
 HamburgerMenu.addEventListener("click", function(e) {
   e.stopPropagation();
   navbarHamburger.style.display = "block";
+  document.body.classList.add('no-scroll');
 });
 
 navbarHamburger.addEventListener("click", function(e) {
@@ -92,6 +96,7 @@ var menuTitle = document.querySelector(".menuTitle");
 menuTitle.addEventListener("click", function(e) {
   e.stopPropagation();
   SubMenus.style.display = "none";
+  document.body.classList.remove('no-scroll');
 });
 
 var hoverActives = document.querySelectorAll(".hoverActives");
@@ -100,6 +105,7 @@ hoverActives.forEach(function(e) {
   e.addEventListener("click", function(es) {
     es.stopPropagation();
     SubMenus.style.display = "block";
+    document.body.classList.add('no-scroll');
   });
 });
 
@@ -110,19 +116,23 @@ SubMenus.addEventListener("click", function(e) {
 window.addEventListener("click", function(e) {
   if (!navbarHamburger.contains(e.target)) {
     navbarHamburger.style.display = "none";
+    document.body.classList.remove('no-scroll');
   }
   if (!menuTitle.contains(e.target) && !SubMenus.contains(e.target)) {
     SubMenus.style.display = "none";
+    document.body.classList.remove('no-scroll');
   }
 });
 
 menuTitle.addEventListener("click", function(e) {
   e.stopPropagation();
   SubMenus.style.display = "none";
+  document.body.classList.remove('no-scroll');
 });
 
 document.addEventListener("click", function(e) {
   if (!menuTitle.contains(e.target) && !SubMenus.contains(e.target)) {
     SubMenus.style.display = "none";
+    document.body.classList.remove('no-scroll');
   }
 });
