@@ -2981,12 +2981,9 @@ body {
     transform: rotateX(360deg);
   }
 }
-.rightSide #desighn {
-  position: relative;
-}
-.rightSide #desighn .imageBg {
-  bottom: 51px;
-  right: -93px;
+.rightSide .imageBg {
+  bottom: 30%;
+  right: 0;
   position: absolute;
   background-image: url("../image/bg-imgbg-rose.png");
   width: 690px;
@@ -2996,7 +2993,7 @@ body {
   opacity: 0.9;
 }
 @media screen and (min-width: 992px) and (max-width: 1400px) {
-  .rightSide #desighn .imageBg {
+  .rightSide .imageBg {
     display: none !important;
   }
 }

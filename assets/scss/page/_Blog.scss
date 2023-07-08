@@ -456,7 +456,6 @@ position: relative;
             }
         }
     }
-
     @media screen and (min-width: 641px) and (max-width: 1007px) {
         #smallAndMediumNavBar {
             right: 0;
@@ -469,7 +468,6 @@ position: relative;
             width: 100%;
         }
     }
-
     #subMenus {
         z-index: 100000;
         display: none;
@@ -530,20 +528,17 @@ position: relative;
             }
         }
     }
-
     @media screen and (min-width:375px) and (max-width:640px) {
         #subMenus {
 
             width: 80%;
         }
     }
-
     @media screen and (min-width: 641px) and (max-width: 1007px) {
         #subMenus {
             width: calc(40% - ((1007px - 100%) / 366));
         }
     }
-
     #blogMainCard {
         .blogCard {
             margin-right: 89px;
@@ -592,7 +587,6 @@ position: relative;
             }
         }
     }
-
     #cards {
         position: relative;
         margin-top: 50px;
@@ -740,8 +734,6 @@ position: relative;
             }
         }
     }
-
-
     .imageBg {
         top: 33%;
         right: 0;
@@ -758,7 +750,6 @@ position: relative;
             display: none !important;
         }
     }
-
     #getStarted {
         margin-top: 50px;
         position: relative;
@@ -919,12 +910,10 @@ align-items: center;
         }
     }
 }
-
 .activePagination {
     background-color: #2E6DF3 !important;
     color: white !important;
 }
-
 .activeNavbar {
     background-color: #000 !important;
     border-color: #000 !important;
