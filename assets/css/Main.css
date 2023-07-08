@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -3168,6 +3169,21 @@ body {
     width: 33% !important;
   }
 }
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Ширина и цвет полосы прокрутки */
+::-webkit-scrollbar {
+  background-color: #1F1F20;
+}
+
+/* Цвет заполнения полосы прокрутки */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #464545;
+}
+
 * {
   padding: 0;
   margin: 0;
