@@ -1184,22 +1184,6 @@ body {
   margin-left: 88px;
   margin-right: 90px;
 }
-#rightSide #cards .imageBg {
-  top: 205px;
-  right: -93px;
-  position: absolute;
-  background-image: url("../image/bg-imgbg-rose.png");
-  width: 690px;
-  height: 750px;
-  transform: rotate(0deg);
-  background-repeat: no-repeat;
-  opacity: 0.9;
-}
-@media screen and (min-width: 992px) and (max-width: 1400px) {
-  #rightSide #cards .imageBg {
-    display: none !important;
-  }
-}
 #rightSide #cards .title {
   width: 304px;
   height: 35px;
@@ -1317,21 +1301,33 @@ body {
     transform: rotateX(360deg);
   }
 }
+#rightSide .imageBg {
+  top: 33%;
+  right: 0;
+  position: absolute;
+  background-image: url("../image/bg-imgbg-rose.png");
+  width: 690px;
+  height: 750px;
+  transform: rotate(0deg);
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  #rightSide .imageBg {
+    display: none !important;
+  }
+}
 #rightSide #getStarted {
   margin-top: 50px;
   position: relative;
 }
 #rightSide #getStarted .bg-image {
-  left: 75px;
-  bottom: 30px;
-  position: absolute;
-  width: 942.861px;
-  background-repeat: no-repeat;
-  height: 393.816px;
-  background-size: cover;
-  transform: rotate(0deg);
-  opacity: 0.9;
-  background-image: url("../image/bg-img_blue.png");
+  display: flex;
+  width: 1481px;
+  height: 576px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../image/bg-img-bottom2.svg");
 }
 @media screen and (min-width: 992px) and (max-width: 1400px) {
   #rightSide #getStarted .bg-image {
@@ -4725,16 +4721,12 @@ body {
   position: relative;
 }
 #rightside #getStarted .bg-image {
-  left: 75px;
-  bottom: 30px;
-  position: absolute;
-  width: 942.861px;
-  background-repeat: no-repeat;
-  height: 393.816px;
-  background-size: cover;
-  transform: rotate(0deg);
-  opacity: 0.9;
-  background-image: url("../image/bg-img_blue.png");
+  display: flex;
+  width: 1481px;
+  height: 576px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../image/bg-img-bottom2.svg");
 }
 @media screen and (min-width: 992px) and (max-width: 1400px) {
   #rightside #getStarted .bg-image {
