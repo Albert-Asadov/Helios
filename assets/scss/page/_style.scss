@@ -213,6 +213,8 @@ body {
     }
 }
 #subMenuHM {
+    overflow-x: hidden;
+
     display: none;
     padding: 30px 10px 30px 10px;
     z-index: 6;

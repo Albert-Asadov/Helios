@@ -172,6 +172,7 @@ body {
 }
 
 #subMenuBI {
+  overflow-x: hidden;
   display: none;
   padding: 30px 10px 30px 10px;
   z-index: 6;
@@ -856,6 +857,7 @@ body {
 }
 
 #subMenuss {
+  overflow-x: hidden;
   display: none;
   padding: 30px 10px 30px 10px;
   z-index: 6;
@@ -2449,6 +2451,7 @@ body {
   }
 }
 #subMenuHM {
+  overflow-x: hidden;
   display: none;
   padding: 30px 10px 30px 10px;
   z-index: 6;
@@ -4194,6 +4197,7 @@ body {
   }
 }
 #subMenu {
+  overflow-x: hidden;
   display: none;
   padding: 30px 10px 30px 10px;
   z-index: 6;
