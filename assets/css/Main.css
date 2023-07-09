@@ -1245,7 +1245,7 @@ body {
 }
 #rightSide #cards .cards-content .card .typography-content {
   width: 100%;
-  padding: 0px 10px;
+  padding: 0px;
 }
 #rightSide #cards .cards-content .card .typography-content .titleContent {
   color: #FFF;
@@ -1256,6 +1256,11 @@ body {
 }
 #rightSide #cards .cards-content .card .typography-content .titleContent p {
   margin: 0;
+}
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  #rightSide #cards .cards-content .card .typography-content .titleContent {
+    font-size: 19px;
+  }
 }
 #rightSide #cards .cards-content .card .typography-content .textContent {
   width: 310px;
@@ -1271,6 +1276,7 @@ body {
 @media screen and (min-width: 992px) and (max-width: 1400px) {
   #rightSide #cards .cards-content .card .typography-content .textContent {
     width: auto;
+    font-size: 19px;
   }
 }
 @media screen and (min-width: 370px) and (max-width: 991px) {
@@ -2572,13 +2578,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.rightSide #smallAndMediumMenu .content .image {
-  height: 25.5497379303px;
+.rightSide #smallAndMediumMenu .content .image a {
   display: flex;
   justify-content: start;
   align-items: center;
+  text-decoration: none;
 }
-.rightSide #smallAndMediumMenu .content .image img {
+.rightSide #smallAndMediumMenu .content .image a img {
   object-fit: contain;
 }
 .rightSide #smallAndMediumMenu .content .HamburgerMenu img {

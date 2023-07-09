@@ -642,7 +642,7 @@ position: relative;
 
                 .typography-content {
                     width: 100%;
-                    padding: 0px 10px;
+                    padding: 0px;
 
                     .titleContent {
                         color: #FFF;
@@ -655,7 +655,11 @@ position: relative;
                             margin: 0;
                         }
                     }
-
+                    @media screen and ( min-width: 992px) and (max-width:1400px) {
+                        .titleContent {
+                            font-size: 19px;
+                        }
+                    }
                     .textContent {
                         width: 310px;
                         margin-top: 10px;
@@ -671,6 +675,7 @@ position: relative;
                     @media screen and ( min-width: 992px) and (max-width:1400px) {
                         .textContent {
                             width: auto;
+                            font-size: 19px;
                         }
                     }
                     @media screen and (min-width: 370px) and (max-width:991px) {
