@@ -38,7 +38,7 @@ body {
   width: 270px;
   height: 398px;
 }
-#leftSide .content .logo {
+#leftSide .content .logo a {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -229,11 +229,14 @@ body {
 }
 #rightSide #smallAndMediumMenu .content .image {
   height: 25.5497379303px;
+}
+#rightSide #smallAndMediumMenu .content .image a {
   display: flex;
   justify-content: start;
   align-items: center;
+  text-decoration: none;
 }
-#rightSide #smallAndMediumMenu .content .image img {
+#rightSide #smallAndMediumMenu .content .image a img {
   object-fit: contain;
 }
 #rightSide #smallAndMediumMenu .content .HamburgerMenu img {
@@ -738,7 +741,7 @@ body {
   width: 270px;
   height: 398px;
 }
-#leftSide .content .logo {
+#leftSide .content .logo a {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -932,11 +935,14 @@ body {
 }
 #rightSide #smallAndMediumMenu .content .image {
   height: 25.5497379303px;
+}
+#rightSide #smallAndMediumMenu .content .image a {
   display: flex;
   justify-content: start;
   align-items: center;
+  text-decoration: none;
 }
-#rightSide #smallAndMediumMenu .content .image img {
+#rightSide #smallAndMediumMenu .content .image a img {
   object-fit: contain;
 }
 #rightSide #smallAndMediumMenu .content .HamburgerMenu img {
@@ -1533,7 +1539,7 @@ body {
   width: 270px;
   height: 398px;
 }
-#leftSide .content .logo {
+#leftSide .content .logo a {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -1719,11 +1725,14 @@ body {
 }
 #rightSide .subMenu_contents #contents #smallAndMediumMenu .content .imageses {
   height: 25.5497379303px;
+}
+#rightSide .subMenu_contents #contents #smallAndMediumMenu .content .imageses a {
   display: flex;
   justify-content: start;
   align-items: center;
+  text-decoration: none;
 }
-#rightSide .subMenu_contents #contents #smallAndMediumMenu .content .imageses img {
+#rightSide .subMenu_contents #contents #smallAndMediumMenu .content .imageses a img {
   object-fit: contain;
 }
 #rightSide .subMenu_contents #contents #smallAndMediumMenu .content .HamburgerMenu img {
@@ -2349,7 +2358,7 @@ body {
   width: 270px;
   height: 398px;
 }
-#leftSides .content .logo {
+#leftSides .content .logo a {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -3268,7 +3277,7 @@ body {
   width: 270px;
   height: 398px;
 }
-#leftSide .content .logo {
+#leftSide .content .logo a {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -3494,11 +3503,14 @@ body {
 }
 #rightSide .subMenu_content #content #smallAndMediumMenu .content .imagesesH {
   height: 25.5497379303px;
+}
+#rightSide .subMenu_content #content #smallAndMediumMenu .content .imagesesH a {
   display: flex;
   justify-content: start;
   align-items: center;
+  text-decoration: none;
 }
-#rightSide .subMenu_content #content #smallAndMediumMenu .content .imagesesH img {
+#rightSide .subMenu_content #content #smallAndMediumMenu .content .imagesesH a img {
   object-fit: contain;
 }
 #rightSide .subMenu_content #content #smallAndMediumMenu .content .HamburgerMenu img {
@@ -4338,11 +4350,14 @@ body {
 }
 #rightside #smallAndMediumMenu .content .image {
   height: 25.5497379303px;
+}
+#rightside #smallAndMediumMenu .content .image a {
   display: flex;
   justify-content: start;
   align-items: center;
+  text-decoration: none;
 }
-#rightside #smallAndMediumMenu .content .image img {
+#rightside #smallAndMediumMenu .content .image a img {
   object-fit: contain;
 }
 #rightside #smallAndMediumMenu .content .HamburgerMenu img {

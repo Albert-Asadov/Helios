@@ -303,12 +303,14 @@ body {
 
             .image {
                 height: 25.54973793029785px;
-                display: flex;
-                justify-content: start;
-                align-items: center;
-
-                img {
-                    object-fit: contain;
+                a{
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    text-decoration: none;
+                    img {
+                        object-fit: contain;
+                    }
                 }
             }
 

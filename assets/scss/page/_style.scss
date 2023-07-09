@@ -33,12 +33,13 @@ body {
     .content {
         width: 270px;
         height: 398px;
-
         .logo {
-            display: flex;
-            justify-content: start;
-            align-items: center;
-
+          
+            a{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+            }
             .mainLogo {
                 img {
                     width: 147.27px;
