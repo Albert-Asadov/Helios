@@ -3071,12 +3071,12 @@ body {
   background-image: url("../image/bg-img-bottom2.svg");
 }
 @media screen and (min-width: 992px) and (max-width: 1400px) {
-  .rightSide #getStarted .bg-image {
+  .rightSide #getStarted .background_Images_Blue {
     display: none !important;
   }
 }
 @media screen and (min-width: 1920px) {
-  .rightSide #getStarted .bg-image {
+  .rightSide #getStarted .background_Images_Blue {
     left: 75px;
     bottom: 90px;
     position: absolute;

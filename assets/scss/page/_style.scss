@@ -16,6 +16,7 @@ body {
         grid-template-columns: 2fr !important;
     }
 }
+
 @media screen and (min-width: 2100px) {
     .Home {
         display: grid !important;
@@ -871,12 +872,12 @@ position: relative;
             background-image: url("../image/bg-img-bottom2.svg");
         }
         @media screen and ( min-width: 992px) and (max-width:1400px) {
-            .bg-image {
+            .background_Images_Blue {
                 display: none !important;
             }
         }
         @media screen and (min-width: 1920px) {
-            .bg-image {
+            .background_Images_Blue {
                 left: 75px;
                 bottom: 90px;
                 position: absolute;
