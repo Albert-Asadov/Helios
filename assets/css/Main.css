@@ -1496,7 +1496,6 @@ body {
   background-color: #1F1F20;
 }
 
-/* Цвет заполнения полосы прокрутки */
 ::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background-color: #464545;
@@ -1504,6 +1503,11 @@ body {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.activeHoverLiSubMenus {
+  background-color: #232323;
+  border-color: #232323;
 }
 
 * {
