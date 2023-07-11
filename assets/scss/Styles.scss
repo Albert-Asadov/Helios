@@ -189,7 +189,7 @@ body {
     padding: 30px 10px 30px 10px;
     z-index: 6;
     background-color: #000;
-    height: 1654px;
+    height: 100vh;
     position: absolute;
     z-index: 9999; 
     left: 353px;
@@ -219,11 +219,11 @@ body {
         }
     }
 }
-@media screen and (min-width: 1920px) {
-    #subMenu{
-        height: 1888px;
-    }
-}
+// @media screen and (min-width: 1920px) {
+//     #subMenu{
+//         height: 1888px;
+//     }
+// }
 #rightSide {
     .subMenu_content {
         display: grid;

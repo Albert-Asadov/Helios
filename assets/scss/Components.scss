@@ -8,20 +8,20 @@ body {
     background: var(--black, #000);
 }
 
-.flexColumns {
+.Home {
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
 
 @media screen and (min-width: 370px) and (max-width:991px) {
-    .flexColumns {
+    .Home {
         display: grid !important;
         grid-template-columns: 2fr !important;
     }
 }
 
 @media screen and (min-width: 2100px) {
-    .flexColumns {
+    .Home {
         display: grid !important;
         grid-template-columns: 1fr 7fr !important;
     }
